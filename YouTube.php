@@ -35,11 +35,15 @@ if( !defined( 'MEDIAWIKI' ) ) {
 }
 
 $wgExtensionCredits['parserhook'][] = array(
+	'path' => __FILE__,
 	'name' => 'YouTube',
 	'version' => '1.8.1',
 	'author' => 'Przemek Piotrowski',
-	'description' => 'Embeds YouTube and Google Video movies + Archive.org audio and video + WeGame and Gametrailers video + Tangler forum + GoGreenTube video',
+	'descriptionmsg' => 'youtube-desc',
 );
+
+$dir = dirname( __FILE__ ) . '/';
+$wgExtensionMessagesFiles['YouTube'] = $dir . 'YouTube.i18n.php';
 
 $wgHooks['ParserFirstCallInit'][] = 'wfYouTube';
 
