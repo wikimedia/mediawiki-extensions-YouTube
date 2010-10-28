@@ -47,11 +47,32 @@ $messages['gl'] = array(
 	'youtube-desc' => 'Incorpora vídeos do YouTube e mais do Google Video, vídeo e son de Archive.org, vídeo de WeGame e Gametrailers, o foro Tangler e vídeo do GoGreenTube',
 );
 
+/** Swiss German (Alemannisch)
+ * @author Als-Holder
+ */
+$messages['gsw'] = array(
+	'youtube-desc' => 'Macht s Yybette megli vu Video vu YouTube, Google Video, WeGame, Gametrailers, GoGreenTube un Tangler Forum, un vu Audio- un Videodateie bi Archive.org',
+);
+
 /** Interlingua (Interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
 	'youtube-desc' => 'Incorpora filmes de YouTube e Google Video, audio e video de Archive.org, video de WeGame e Gametrailers, foro de Tangler e video de GoGreenTube',
+);
+
+/** Japanese (日本語)
+ * @author 青子守歌
+ */
+$messages['ja'] = array(
+	'youtube-desc' => 'YouTubeやGoogleビデオの動画、Archive.orgの音声や動画、WeGameとGametrailersの動画、TanglerフォーラムとGoGreenTube動画を埋め込む',
+);
+
+/** Macedonian (Македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'youtube-desc' => 'Вметнува филмови од YouTube и Google Video, аудио и видеоснимки од Archive.org, видеоснимки од WeGame и Gametrailers, форумот Tangler и видеоснимки од GoGreenTube',
 );
 
 /** Dutch (Nederlands)
@@ -68,10 +89,24 @@ $messages['no'] = array(
 	'youtube-desc' => 'Bygger inn YouTube- og Google Video-videoer, lyd og video fra Archive.org, video fra WeGame og Gamtrailers, Tangler-forum og GoGreenTube-video',
 );
 
+/** Polish (Polski)
+ * @author Sp5uhe
+ */
+$messages['pl'] = array(
+	'youtube-desc' => 'Osadzony odtwarzasz filmów YouTube i Google, muzyki i filmów Archive.org, filmów WeGame i Gametrailers, forum Tangler i filmów GoGreenTube',
+);
+
 /** Portuguese (Português)
  * @author Hamilton Abreu
  */
 $messages['pt'] = array(
+	'youtube-desc' => 'Incorpora vídeo YouTube e Google Video, áudio e vídeo Archive.org, vídeo WeGame e Gametrailers, fórum Tangler e vídeo GoGreenTube',
+);
+
+/** Brazilian Portuguese (Português do Brasil)
+ * @author Giro720
+ */
+$messages['pt-br'] = array(
 	'youtube-desc' => 'Incorpora vídeo YouTube e Google Video, áudio e vídeo Archive.org, vídeo WeGame e Gametrailers, fórum Tangler e vídeo GoGreenTube',
 );
 
