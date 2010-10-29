@@ -26,6 +26,13 @@ $messages['af'] = array(
 	'youtube-desc' => 'Plaas YouTube- en Google Video-flieks, Archive.org-klank en -video, WeGame- en Gametrailers-video, Tangler-forum, en GoGreenTube-video',
 );
 
+/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author Jim-by
+ */
+$messages['be-tarask'] = array(
+	'youtube-desc' => 'Убудаваны прайгравальнік фільмаў YouTube і Google Video, Archive.org аўдыа і відэа, WeGame і Gametrailers, форум Tangler, і відэа GoGreenTube',
+);
+
 /** Bosnian (Bosanski)
  * @author CERminator
  */
@@ -108,5 +115,12 @@ $messages['pt'] = array(
  */
 $messages['pt-br'] = array(
 	'youtube-desc' => 'Incorpora vídeo YouTube e Google Video, áudio e vídeo Archive.org, vídeo WeGame e Gametrailers, fórum Tangler e vídeo GoGreenTube',
+);
+
+/** Russian (Русский)
+ * @author Александр Сигачёв
+ */
+$messages['ru'] = array(
+	'youtube-desc' => 'Встраивает фильмы YouTube и Google Video, аудио и видео Archive.org, видео WeGame, GameTrailers, Tangler, GoGreenTube',
 );
 
