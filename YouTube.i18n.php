@@ -75,6 +75,13 @@ $messages['ja'] = array(
 	'youtube-desc' => 'YouTubeやGoogleビデオの動画、Archive.orgの音声や動画、WeGameとGametrailersの動画、TanglerフォーラムとGoGreenTube動画を埋め込む',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'youtube-desc' => "Erméiglecht d'Abanne vu Videoen déi op YouTube, Google Video, WeGame, Gametrailers, GoGreenTube a bei Tangler Forum disponibel sinn, sowéi vun Audio- und Videodateien vun Archive.org",
+);
+
 /** Macedonian (Македонски)
  * @author Bjankuloski06
  */
@@ -103,6 +110,13 @@ $messages['pl'] = array(
 	'youtube-desc' => 'Osadzony odtwarzasz filmów YouTube i Google, muzyki i filmów Archive.org, filmów WeGame i Gametrailers, forum Tangler i filmów GoGreenTube',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'youtube-desc' => 'A ancastra filmà YouTube e Google Video, audio e video Archive.org, video WeGame e Gametrailers, forum Tangler, e video GoGreenTube',
+);
+
 /** Portuguese (Português)
  * @author Hamilton Abreu
  */
@@ -115,6 +129,13 @@ $messages['pt'] = array(
  */
 $messages['pt-br'] = array(
 	'youtube-desc' => 'Incorpora vídeo YouTube e Google Video, áudio e vídeo Archive.org, vídeo WeGame e Gametrailers, fórum Tangler e vídeo GoGreenTube',
+);
+
+/** Tarandíne (Tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'youtube-desc' => "'Ngapsule le video de YouTube e Google Video, audio e video de Archive.org, video de WeGame e Gametrailers, forum de Tangler e video de GoGreenTube",
 );
 
 /** Russian (Русский)
