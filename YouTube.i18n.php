@@ -47,6 +47,13 @@ $messages['de'] = array(
 	'youtube-desc' => 'Ermöglicht das Einbetten von Videos die bei YouTube, Google Video, WeGame, Gametrailers, GoGreenTube und beim Tangler Forum vorhanden sind, sowie von Audio- und Videodateien bei Archive.org',
 );
 
+/** French (Français)
+ * @author Jean-Frédéric
+ */
+$messages['fr'] = array(
+	'youtube-desc' => 'Incorpore des vidéos YouTube et Google Video, des sons et vidéos Archive.org, des vidéos WeGame et Gametrailers, des forums Tangler et des vidéos GoGreenTube',
+);
+
 /** Galician (Galego)
  * @author Toliño
  */
