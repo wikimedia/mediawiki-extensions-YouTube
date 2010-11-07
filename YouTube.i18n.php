@@ -33,6 +33,13 @@ $messages['be-tarask'] = array(
 	'youtube-desc' => 'Убудаваны прайгравальнік фільмаў YouTube і Google Video, Archive.org аўдыа і відэа, WeGame і Gametrailers, форум Tangler, і відэа GoGreenTube',
 );
 
+/** Breton (Brezhoneg)
+ * @author Y-M D
+ */
+$messages['br'] = array(
+	'youtube-desc' => 'Enlakaat a ra videoioù YouTube ha Google Video, sonioù ha videoioù Archive.org, videoioù WeGame ha Gametrailers, foromoù Tangler ha videoioù GoGreenTube',
+);
+
 /** Bosnian (Bosanski)
  * @author CERminator
  */
