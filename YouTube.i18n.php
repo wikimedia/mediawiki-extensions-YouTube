@@ -54,6 +54,13 @@ $messages['de'] = array(
 	'youtube-desc' => 'Ermöglicht das Einbetten von Videos die bei YouTube, Google Video, WeGame, Gametrailers, GoGreenTube und beim Tangler Forum vorhanden sind, sowie von Audio- und Videodateien bei Archive.org',
 );
 
+/** Spanish (Español)
+ * @author Locos epraix
+ */
+$messages['es'] = array(
+	'youtube-desc' => 'Embebe películas Youtube y Google Video, audio y video Archive.org, videos WeGame y Gametrailers, foro Tangler, y video GoGreenTube',
+);
+
 /** French (Français)
  * @author Jean-Frédéric
  */
@@ -73,6 +80,13 @@ $messages['gl'] = array(
  */
 $messages['gsw'] = array(
 	'youtube-desc' => 'Macht s Yybette megli vu Video vu YouTube, Google Video, WeGame, Gametrailers, GoGreenTube un Tangler Forum, un vu Audio- un Videodateie bi Archive.org',
+);
+
+/** Upper Sorbian (Hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'youtube-desc' => 'Zasadźa widejow z YouTube a Google Video, WeGame a Gametrailers, Tangler forum a GoGreenTube kaž tež awdio- a widejodateje z Archiv.org',
 );
 
 /** Interlingua (Interlingua)
