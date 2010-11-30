@@ -89,6 +89,13 @@ $messages['gsw'] = array(
 	'youtube-desc' => 'Macht s Yybette megli vu Video vu YouTube, Google Video, WeGame, Gametrailers, GoGreenTube un Tangler Forum, un vu Audio- un Videodateie bi Archive.org',
 );
 
+/** Hebrew (עברית)
+ * @author YaronSh
+ */
+$messages['he'] = array(
+	'youtube-desc' => 'הטמעת סרטונים מ־YouTube ומ־Google Video, סרטונים וקטעי שמע מ־Archive.org, קטעי וידאו מ־WeGame ו־Gametrailers, פורום Tangler ווידאו מ־GoGreenTube',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
