@@ -61,6 +61,13 @@ $messages['dsb'] = array(
 	'youtube-desc' => 'Zmóžnja zasajźowanje wideo z Youtube a Google Video, WeGame a Gametrailers, GoGreenTube a z foruma Tangler a teke awdio a wideo z archive.org',
 );
 
+/** Esperanto (Esperanto)
+ * @author Mihxil
+ */
+$messages['eo'] = array(
+	'youtube-desc' => 'Enkorpigas filmojn de YouTube kaj Google Video, sonojn kaj bildojn de Archive.org, filmojn de WeGame kaj Gametrailers, forumon de Tangler, kaj filmojn de GoGreenTube',
+);
+
 /** Spanish (Español)
  * @author Locos epraix
  */
