@@ -26,7 +26,7 @@ $messages['af'] = array(
 	'youtube-desc' => 'Plaas YouTube- en Google Video-flieks, Archive.org-klank en -video, WeGame- en Gametrailers-video, Tangler-forum, en GoGreenTube-video',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author Jim-by
  */
 $messages['be-tarask'] = array(
