@@ -131,6 +131,13 @@ $messages['ja'] = array(
 	'youtube-desc' => 'YouTubeやGoogleビデオの動画、Archive.orgの音声や動画、WeGameとGametrailersの動画、TanglerフォーラムとGoGreenTube動画を埋め込む',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'youtube-desc' => 'Määt Viddejos vun <i lang="en">YouTube</i> un <i lang="en">Google</i> müjjelesch, Viddejos un Tön vun <i lang="en">Archive.org</i>, Viddejos vun <i lang="en">WeGame</i> un <i lang="en">Gametrailers</i>, <i lang="en">Tangler</i> ier Forum, un Viddejos vun <i lang="en">GoGreenTube</i>.',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
