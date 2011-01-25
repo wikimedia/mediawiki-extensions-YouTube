@@ -174,10 +174,11 @@ $messages['pl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'youtube-desc' => 'A ancastra filmà YouTube e Google Video, audio e video Archive.org, video WeGame e Gametrailers, forum Tangler, e video GoGreenTube',
+	'youtube-desc' => 'A ancòrpora dij filmà YouTube e Google Video, dij son e filmà Archive.org, dij filmà WeGame e Gametrailers, dle piasse ëd discussion Tangler, e dij filmà GoGreenTube',
 );
 
 /** Portuguese (Português)
