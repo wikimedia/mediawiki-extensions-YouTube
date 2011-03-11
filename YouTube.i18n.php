@@ -216,3 +216,10 @@ $messages['sr-ec'] = array(
 	'youtube-desc' => 'Уграђује видео снимке са популарних страница за складиштење видео записа',
 );
 
+/** Swedish (Svenska)
+ * @author WikiPhoenix
+ */
+$messages['sv'] = array(
+	'youtube-desc' => 'Bäddar in YouTube- och Google Video-filmer, ljud och videor från Archive.org, videor från WeGame och Gametrailers, Tangler-forum och GoGreenTube-videor',
+);
+
