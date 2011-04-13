@@ -149,7 +149,7 @@ $messages['lb'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'youtube-desc' => 'Вметнува филмови од YouTube и Google Video, аудио и видеоснимки од Archive.org, видеоснимки од WeGame и Gametrailers, форумот Tangler и видеоснимки од GoGreenTube',
+	'youtube-desc' => 'Вметнува филмови од YouTube и Google Video, аудио и видео снимки од Archive.org, видеоснимки од WeGame и Gametrailers, форумот Tangler и видеоснимки од GoGreenTube',
 );
 
 /** Dutch (Nederlands)
