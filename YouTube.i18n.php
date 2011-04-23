@@ -223,3 +223,10 @@ $messages['sv'] = array(
 	'youtube-desc' => 'Bäddar in YouTube- och Google Video-filmer, ljud och videor från Archive.org, videor från WeGame och Gametrailers, Tangler-forum och GoGreenTube-videor',
 );
 
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'youtube-desc' => 'Nagbabaon ng mga pelikula ng YouTube at Bidyo ng Google, audio at bidyo ng Archive.org, bidyo ng WeGame at Gametrailers, poro ng Tangler, at bidyo ng GoGreenTube',
+);
+
