@@ -103,6 +103,13 @@ $messages['he'] = array(
 	'youtube-desc' => 'הטמעת סרטונים מ־YouTube ומ־Google Video, סרטונים וקטעי שמע מ־Archive.org, קטעי וידאו מ־WeGame ו־Gametrailers, פורום Tangler ווידאו מ־GoGreenTube',
 );
 
+/** Croatian (Hrvatski)
+ * @author Ex13
+ */
+$messages['hr'] = array(
+	'youtube-desc' => 'Ubacuje isječke iz YouTube i Google Video, zvuk i video iz Archive.org, video  s WeGame i Gametrailers, foruma Tangler i video s GoGreenTube',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
