@@ -216,6 +216,13 @@ $messages['ru'] = array(
 	'youtube-desc' => 'Встраивает фильмы YouTube и Google Video, аудио и видео Archive.org, видео WeGame, GameTrailers, Tangler, GoGreenTube',
 );
 
+/** Slovenian (Slovenščina)
+ * @author Dbc334
+ */
+$messages['sl'] = array(
+	'youtube-desc' => 'Vdela filme YouTube in Google Video, zvok in video Archive.org, video WeGame in Gametrailers, forum Tangler in video GoGreenTube',
+);
+
 /** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Rancher
  */
