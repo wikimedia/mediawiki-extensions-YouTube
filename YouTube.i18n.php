@@ -131,6 +131,13 @@ $messages['id'] = array(
 	'youtube-desc' => 'Menyertakan film YouTube dan Google Video, audio dan video Archive.org, video WeGame dan Gametrailers, forum Tangler, serta video GoGreenTube',
 );
 
+/** Italian (Italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'youtube-desc' => 'Incorpora i filmati di YouTube e Google Video, audio e video Archive.org, video WeGame e Gametrailers, forum Tangler e video GoGreenTube',
+);
+
 /** Japanese (日本語)
  * @author 青子守歌
  */
