@@ -166,6 +166,13 @@ $messages['mk'] = array(
 	'youtube-desc' => 'Вметнува филмови од YouTube и Google Video, аудио и видео снимки од Archive.org, видеоснимки од WeGame и Gametrailers, форумот Tangler и видеоснимки од GoGreenTube',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'youtube-desc' => 'Membenarkan video YouTube dan Google Video, audio dan video Archive.org, video WeGame dan Gametrailers, forum Tangler dan video GoGreenTube',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
