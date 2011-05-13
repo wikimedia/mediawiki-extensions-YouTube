@@ -258,3 +258,10 @@ $messages['tl'] = array(
 	'youtube-desc' => 'Nagbabaon ng mga pelikula ng YouTube at Bidyo ng Google, audio at bidyo ng Archive.org, bidyo ng WeGame at Gametrailers, poro ng Tangler, at bidyo ng GoGreenTube',
 );
 
+/** Vietnamese (Tiếng Việt)
+ * @author Trần Nguyễn Minh Huy
+ */
+$messages['vi'] = array(
+	'youtube-desc' => 'Nhúng phim ảnh từ YouTube và Google Video, âm thanh và video từ Archive.org, video từ WeGame và Gametrailers, diễn đàn Tangler, và video từ GoGreenTube',
+);
+
