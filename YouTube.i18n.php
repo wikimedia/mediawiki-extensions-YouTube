@@ -26,6 +26,13 @@ $messages['af'] = array(
 	'youtube-desc' => 'Plaas YouTube- en Google Video-flieks, Archive.org-klank en -video, WeGame- en Gametrailers-video, Tangler-forum, en GoGreenTube-video',
 );
 
+/** Bavarian (Boarisch)
+ * @author Mucalexx
+ */
+$messages['bar'] = array(
+	'youtube-desc' => 'Dameeglicht as Eibetten vo Videos de ba YouTube, Google Video, WeGame, Gametrailers, GoGreenTube und bam Tangler Forum vurhånden san, sowia vo Audio- und Videodaatein bei Archive.org',
+);
+
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author Jim-by
  */
