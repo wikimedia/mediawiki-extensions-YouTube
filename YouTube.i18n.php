@@ -54,6 +54,13 @@ $messages['bs'] = array(
 	'youtube-desc' => 'Ubacuje isječke iz YouTube i Google Video, zvuk i video iz Archive.org, WeGame i video sa Gametrailers, foruma Tangler i video sa GoGreenTube',
 );
 
+/** Catalan (Català)
+ * @author BroOk
+ */
+$messages['ca'] = array(
+	'youtube-desc' => 'Incrusta les pel·lícules de YouTube i de Google Video, àudio i vídeo Archive.org, WeGame i vídeo GameTrailers, fòrum tangle i vídeo GoGreenTube',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
