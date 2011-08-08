@@ -272,6 +272,13 @@ $messages['tl'] = array(
 	'youtube-desc' => 'Nagbabaon ng mga pelikula ng YouTube at Bidyo ng Google, audio at bidyo ng Archive.org, bidyo ng WeGame at Gametrailers, poro ng Tangler, at bidyo ng GoGreenTube',
 );
 
+/** Ukrainian (Українська)
+ * @author Dim Grits
+ */
+$messages['uk'] = array(
+	'youtube-desc' => 'Вмонтовує відеороліки з YouTube і Google Video, аудіо і відео з Archive.org, WeGame, Gametrailers, Tangler і GoGreenTube',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Trần Nguyễn Minh Huy
  */
