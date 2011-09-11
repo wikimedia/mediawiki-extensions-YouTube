@@ -286,3 +286,10 @@ $messages['vi'] = array(
 	'youtube-desc' => 'Nhúng phim ảnh từ YouTube và Google Video, âm thanh và video từ Archive.org, video từ WeGame và Gametrailers, diễn đàn Tangler, và video từ GoGreenTube',
 );
 
+/** Traditional Chinese (‪中文(繁體)‬)
+ * @author Waihorace
+ */
+$messages['zh-hant'] = array(
+	'youtube-desc' => '允許插入Youtube及Google Video電影、Archive.org影音、WeGame及Gametrailers影片、Tangler forum及GoGreenTube影片',
+);
+
