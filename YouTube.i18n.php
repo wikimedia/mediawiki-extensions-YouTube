@@ -26,6 +26,13 @@ $messages['af'] = array(
 	'youtube-desc' => 'Plaas YouTube- en Google Video-flieks, Archive.org-klank en -video, WeGame- en Gametrailers-video, Tangler-forum, en GoGreenTube-video',
 );
 
+/** Asturian (Asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'youtube-desc' => "Incorpora películes de YouTube y Google Video, videu y soníu d'Archive.org, videu de WeGame y Gametrailers, foru Tangler, y videu de GoGreenTube",
+);
+
 /** Bavarian (Boarisch)
  * @author Mucalexx
  */
