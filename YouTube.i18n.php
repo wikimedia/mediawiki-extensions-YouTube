@@ -98,9 +98,10 @@ $messages['eo'] = array(
 
 /** Spanish (Español)
  * @author Locos epraix
+ * @author Vivaelcelta
  */
 $messages['es'] = array(
-	'youtube-desc' => 'Embebe películas Youtube y Google Video, audio y video Archive.org, videos WeGame y Gametrailers, foro Tangler, y video GoGreenTube',
+	'youtube-desc' => 'Incorpora películas de Youtube y Google Video, audio y vídeo de Archive.org, vídeos de WeGame y Gametrailers, el foro Tangler, y vídeos de GoGreenTube',
 );
 
 /** French (Français)
