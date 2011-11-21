@@ -146,6 +146,13 @@ $messages['hsb'] = array(
 	'youtube-desc' => 'Zasadźa widejow z YouTube a Google Video, WeGame a Gametrailers, Tangler forum a GoGreenTube kaž tež awdio- a widejodateje z Archiv.org',
 );
 
+/** Hungarian (Magyar)
+ * @author Dj
+ */
+$messages['hu'] = array(
+	'youtube-desc' => 'YouTube és Google Video videó, Archive.org hang és videó, WeGame and Gametrailers videó, Tangler fórum és  GoGreenTube videó beágyazása',
+);
+
 /** Interlingua (Interlingua)
  * @author McDutchie
  */
