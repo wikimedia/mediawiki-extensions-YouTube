@@ -273,7 +273,7 @@ $messages['sl'] = array(
 	'youtube-desc' => 'Vdela filme YouTube in Google Video, zvok in video Archive.org, video WeGame in Gametrailers, forum Tangler in video GoGreenTube',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Rancher
  */
 $messages['sr-ec'] = array(
