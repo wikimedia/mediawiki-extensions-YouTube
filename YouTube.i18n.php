@@ -219,7 +219,7 @@ $messages['nl'] = array(
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Nghtwlkr
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'youtube-desc' => 'Bygger inn YouTube- og Google Video-videoer, lyd og video fra Archive.org, video fra WeGame og Gamtrailers, Tangler-forum og GoGreenTube-video',
 );
 
