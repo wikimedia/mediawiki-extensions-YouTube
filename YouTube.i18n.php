@@ -209,18 +209,18 @@ $messages['ms'] = array(
 	'youtube-desc' => 'Membenarkan video YouTube dan Google Video, audio dan video Archive.org, video WeGame dan Gametrailers, forum Tangler dan video GoGreenTube',
 );
 
-/** Dutch (Nederlands)
- * @author Siebrand
- */
-$messages['nl'] = array(
-	'youtube-desc' => 'Maakt het mogelijk video in te sluiten van YouTube en Google Video, audio en video van Archive.org, video van WeGame en Gametrailers en video van GoGreenTube',
-);
-
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
 	'youtube-desc' => 'Bygger inn YouTube- og Google Video-videoer, lyd og video fra Archive.org, video fra WeGame og Gamtrailers, Tangler-forum og GoGreenTube-video',
+);
+
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'youtube-desc' => 'Maakt het mogelijk video in te sluiten van YouTube en Google Video, audio en video van Archive.org, video van WeGame en Gametrailers en video van GoGreenTube',
 );
 
 /** Polish (Polski)
