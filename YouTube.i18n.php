@@ -181,6 +181,13 @@ $messages['ja'] = array(
 	'youtube-desc' => 'YouTubeやGoogleビデオの動画、Archive.orgの音声や動画、WeGameとGametrailersの動画、TanglerフォーラムとGoGreenTube動画を埋め込む',
 );
 
+/** Korean (한국어)
+ * @author Kwj2772
+ */
+$messages['ko'] = array(
+	'youtube-desc' => '유튜브나 구글 비디오 동영상과 Archive.org 오디오와 비디오, WeGame과 Gametrailers 비디오, Tangler 포럼, GoGreenTube 비디오를 삽입',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
