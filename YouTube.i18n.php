@@ -303,7 +303,7 @@ $messages['sr-el'] = array(
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
-	'youtube-desc' => 'Bäddar in YouTube- och Google Video-filmer, ljud och videor från Archive.org, videor från WeGame och Gametrailers, Tangler-forum och GoGreenTube-videor',
+	'youtube-desc' => 'Bäddar in videoklipp från YouTube och Google Video, ljud och videoklipp från Archive.org, videoklipp från WeGame och Gametrailers, Tangler-forum och GoGreenTube',
 );
 
 /** Tagalog (Tagalog)
