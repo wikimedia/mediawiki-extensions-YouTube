@@ -181,6 +181,13 @@ $messages['ja'] = array(
 	'youtube-desc' => 'YouTubeやGoogleビデオの動画、Archive.orgの音声や動画、WeGameとGametrailersの動画、TanglerフォーラムとGoGreenTube動画を埋め込む',
 );
 
+/** Khmer (ភាសាខ្មែរ)
+ * @author គីមស៊្រុន
+ */
+$messages['km'] = array(
+	'youtube-desc' => 'បញ្ជូល វីដេអូពីYouTube និង Google Video, សំលេងនិងរូបភាពពី Archive.org, វីដេអូពី WeGame និង Gametrailers, វេទិកា Tangler, ហើយនិងវិដេអូពី GoGreenTube',
+);
+
 /** Korean (한국어)
  * @author Kwj2772
  */
