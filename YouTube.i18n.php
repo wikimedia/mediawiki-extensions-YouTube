@@ -40,7 +40,7 @@ $messages['bar'] = array(
 	'youtube-desc' => 'Dameeglicht as Eibetten vo Videos de ba YouTube, Google Video, WeGame, Gametrailers, GoGreenTube und bam Tangler Forum vurhånden san, sowia vo Audio- und Videodaatein bei Archive.org',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author Jim-by
  */
 $messages['be-tarask'] = array(
@@ -82,7 +82,7 @@ $messages['de'] = array(
 	'youtube-desc' => 'Ermöglicht das Einbetten von Videos die bei YouTube, Google Video, WeGame, Gametrailers, GoGreenTube und beim Tangler Forum vorhanden sind, sowie von Audio- und Videodateien bei Archive.org',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -111,7 +111,7 @@ $messages['fr'] = array(
 	'youtube-desc' => 'Incorpore des vidéos YouTube et Google Video, des sons et vidéos Archive.org, des vidéos WeGame et Gametrailers, des forums Tangler et des vidéos GoGreenTube',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -139,7 +139,7 @@ $messages['hr'] = array(
 	'youtube-desc' => 'Ubacuje isječke iz YouTube i Google Video, zvuk i video iz Archive.org, video  s WeGame i Gametrailers, foruma Tangler i video s GoGreenTube',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
