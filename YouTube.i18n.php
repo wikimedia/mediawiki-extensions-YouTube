@@ -223,7 +223,7 @@ $messages['ms'] = array(
 	'youtube-desc' => 'Membenarkan video YouTube dan Google Video, audio dan video Archive.org, video WeGame dan Gametrailers, forum Tangler dan video GoGreenTube',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
