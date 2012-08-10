@@ -75,6 +75,13 @@ $messages['cy'] = array(
 	'youtube-desc' => 'Yn mewnblannu fideos YouTube a Google Video, fideos a chlipiau sain Archive,org, fideos WeGame a Gametrailers, fforwm Tangler a fideos GoGreenTube',
 );
 
+/** Danish (dansk)
+ * @author Hylle
+ */
+$messages['da'] = array(
+	'youtube-desc' => 'Indlejrer YouTube og Google Video film, Archive.org lyd og video, WeGame og Gametrailers video, Tangler fora og GoGreenTube video',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
