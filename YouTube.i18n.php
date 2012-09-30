@@ -341,6 +341,13 @@ $messages['vi'] = array(
 	'youtube-desc' => 'Nhúng phim ảnh từ YouTube và Google Video, âm thanh và video từ Archive.org, video từ WeGame và Gametrailers, diễn đàn Tangler, và video từ GoGreenTube',
 );
 
+/** Waray (Winaray)
+ * @author Harvzsf
+ */
+$messages['war'] = array(
+	'youtube-desc' => 'Nag-eembed hin YouTube ngan Google nga Video nga mga salida, Archive.org nga audio ngan video, WeGame ngan Gametrailers nga video, Tangler nga forum, ngan GoGreen Tube nga video',
+);
+
 /** Simplified Chinese (‪中文（简体）‬) */
 $messages['zh-hans'] = array(
 	'youtube-desc' => '允许插入Youtube及Google Video电影、Archive.org影音、WeGame及Gametrailers影片、Tangler forum及GoGreenTube影片',
