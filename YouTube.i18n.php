@@ -40,7 +40,7 @@ $messages['bar'] = array(
 	'youtube-desc' => 'Dameeglicht as Eibetten vo Videos de ba YouTube, Google Video, WeGame, Gametrailers, GoGreenTube und bam Tangler Forum vurhånden san, sowia vo Audio- und Videodaatein bei Archive.org',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Jim-by
  */
 $messages['be-tarask'] = array(
@@ -230,7 +230,7 @@ $messages['ms'] = array(
 	'youtube-desc' => 'Membenarkan video YouTube dan Google Video, audio dan video Archive.org, video WeGame dan Gametrailers, forum Tangler dan video GoGreenTube',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -301,14 +301,14 @@ $messages['sl'] = array(
 	'youtube-desc' => 'Vdela filme YouTube in Google Video, zvok in video Archive.org, video WeGame in Gametrailers, forum Tangler in video GoGreenTube',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  */
 $messages['sr-ec'] = array(
 	'youtube-desc' => 'Уграђује видео снимке са популарних страница за складиштење видео записа',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬) */
+/** Serbian (Latin script) (srpski (latinica)‎) */
 $messages['sr-el'] = array(
 	'youtube-desc' => 'Ugrađuje video snimke sa popularnih stranica za skladištenje video zapisa',
 );
@@ -348,12 +348,12 @@ $messages['war'] = array(
 	'youtube-desc' => 'Nag-eembed hin YouTube ngan Google nga Video nga mga salida, Archive.org nga audio ngan video, WeGame ngan Gametrailers nga video, Tangler nga forum, ngan GoGreen Tube nga video',
 );
 
-/** Simplified Chinese (‪中文（简体）‬) */
+/** Simplified Chinese (中文（简体）‎) */
 $messages['zh-hans'] = array(
 	'youtube-desc' => '允许插入Youtube及Google Video电影、Archive.org影音、WeGame及Gametrailers影片、Tangler forum及GoGreenTube影片',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Waihorace
  */
 $messages['zh-hant'] = array(
