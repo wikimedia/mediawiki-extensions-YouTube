@@ -308,7 +308,8 @@ $messages['sr-ec'] = array(
 	'youtube-desc' => 'Уграђује видео снимке са популарних страница за складиштење видео записа',
 );
 
-/** Serbian (Latin script) (srpski (latinica)‎) */
+/** Serbian (Latin script) (srpski (latinica)‎)
+ */
 $messages['sr-el'] = array(
 	'youtube-desc' => 'Ugrađuje video snimke sa popularnih stranica za skladištenje video zapisa',
 );
@@ -348,7 +349,8 @@ $messages['war'] = array(
 	'youtube-desc' => 'Nag-eembed hin YouTube ngan Google nga Video nga mga salida, Archive.org nga audio ngan video, WeGame ngan Gametrailers nga video, Tangler nga forum, ngan GoGreen Tube nga video',
 );
 
-/** Simplified Chinese (中文（简体）‎) */
+/** Simplified Chinese (中文（简体）‎)
+ */
 $messages['zh-hans'] = array(
 	'youtube-desc' => '允许插入Youtube及Google Video电影、Archive.org影音、WeGame及Gametrailers影片、Tangler forum及GoGreenTube影片',
 );
@@ -359,4 +361,3 @@ $messages['zh-hans'] = array(
 $messages['zh-hant'] = array(
 	'youtube-desc' => '允許插入Youtube及Google Video電影、Archive.org影音、WeGame及Gametrailers影片、Tangler forum及GoGreenTube影片',
 );
-
