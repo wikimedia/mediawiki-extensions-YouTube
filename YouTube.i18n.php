@@ -281,6 +281,7 @@ $messages['roa-tara'] = array(
 );
 
 /** Russian (русский)
+ * @author Eleferen
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
