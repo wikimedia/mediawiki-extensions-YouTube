@@ -14,9 +14,10 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Raymond
+ * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'youtube-desc' => '{{desc}}',
+	'youtube-desc' => '{{desc|name=YouTube|url=http://www.mediawiki.org/wiki/Category:YouTube_extensions}}',
 );
 
 /** Afrikaans (Afrikaans)
