@@ -337,6 +337,13 @@ $messages['uk'] = array(
 	'youtube-desc' => 'Вмонтовує відеороліки з YouTube і Google Video, аудіо і відео з Archive.org, WeGame, Gametrailers, Tangler і GoGreenTube',
 );
 
+/** Uzbek (oʻzbekcha)
+ * @author Akmalzhon
+ */
+$messages['uz'] = array(
+	'youtube-desc' => "YouTube va Google Video roliklar, Archive.org audio va video, WeGame va Gametrailers video, Tangler forum, va GoGreenTube video o'rnatadi",
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Trần Nguyễn Minh Huy
  */
