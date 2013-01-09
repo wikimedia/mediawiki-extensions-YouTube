@@ -269,9 +269,10 @@ $messages['pt'] = array(
 
 /** Brazilian Portuguese (português do Brasil)
  * @author Giro720
+ * @author Tuliouel
  */
 $messages['pt-br'] = array(
-	'youtube-desc' => 'Incorpora vídeo YouTube e Google Video, áudio e vídeo Archive.org, vídeo WeGame e Gametrailers, fórum Tangler e vídeo GoGreenTube',
+	'youtube-desc' => 'Incorpora vídeos do YouTube e Google Video, áudio e vídeo do Archive.org, vídeo do WeGame e Gametrailers, fórum do Tangler e vídeo do GoGreenTube',
 );
 
 /** tarandíne (tarandíne)
