@@ -246,10 +246,11 @@ $messages['nl'] = array(
 );
 
 /** Polish (polski)
+ * @author Chrumps
  * @author Sp5uhe
  */
 $messages['pl'] = array(
-	'youtube-desc' => 'Osadzony odtwarzasz filmów YouTube i Google, muzyki i filmów Archive.org, filmów WeGame i Gametrailers, forum Tangler i filmów GoGreenTube',
+	'youtube-desc' => 'Osadza filmy z YouTube i Google Video, audio i filmy Archive.org, filmy WeGame i GameTrailers, forum Tangler i filmy GoGreenTube',
 );
 
 /** Piedmontese (Piemontèis)
