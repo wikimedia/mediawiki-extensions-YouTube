@@ -112,6 +112,13 @@ $messages['es'] = array(
 	'youtube-desc' => 'Incorpora películas de Youtube y Google Video, audio y vídeo de Archive.org, vídeos de WeGame y Gametrailers, el foro Tangler, y vídeos de GoGreenTube',
 );
 
+/** Persian (فارسی)
+ * @author Ladsgroup
+ */
+$messages['fa'] = array(
+	'youtube-desc' => 'جاسازی فیلم‌های یوتیوب، گوگل ویدئو، صداها و تصاویر Archive.org، ویدئوهای وی‌گیم و گیم‌تریلرز، فروم‌های تنگلر و ویدئوهای گوگرین‌تیوب',
+);
+
 /** French (français)
  * @author Jean-Frédéric
  */
