@@ -224,6 +224,13 @@ $messages['lb'] = array(
 	'youtube-desc' => "Erméiglecht d'Abanne vu Videoen déi op YouTube, Google Video, WeGame, Gametrailers, GoGreenTube a bei Tangler Forum disponibel sinn, sowéi vun Audio- und Videodateien vun Archive.org",
 );
 
+/** Lithuanian (lietuvių)
+ * @author Mantak111
+ */
+$messages['lt'] = array(
+	'youtube-desc' => 'Įterpti YouTube ir Google vaizdo įrašų filmai, Archive.org vaizdo įrašai, WeGame ir Gamespot vaizdo įrašai, Tangler forumas ir GoGreenTube vaizdo įrašas',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
