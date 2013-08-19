@@ -119,6 +119,13 @@ $messages['fa'] = array(
 	'youtube-desc' => 'جاسازی فیلم‌های یوتیوب، گوگل ویدئو، صداها و تصاویر Archive.org، ویدئوهای وی‌گیم و گیم‌تریلرز، فروم‌های تنگلر و ویدئوهای گوگرین‌تیوب',
 );
 
+/** Faroese (føroyskt)
+ * @author EileenSanda
+ */
+$messages['fo'] = array(
+	'youtube-desc' => 'Innlimar YouTube og Google Video filmar, Archive.org ljóð og video, WeGame og Gametrailers video, Tangler forum og GoGreenTube video',
+);
+
 /** French (français)
  * @author Jean-Frédéric
  */
