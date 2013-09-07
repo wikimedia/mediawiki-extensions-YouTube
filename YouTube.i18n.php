@@ -266,6 +266,13 @@ $messages['nl'] = array(
 	'youtube-desc' => 'Maakt het mogelijk video in te sluiten van YouTube en Google Video, audio en video van Archive.org, video van WeGame en Gametrailers en video van GoGreenTube',
 );
 
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'youtube-desc' => 'Incorpòra de vidèos YouTube e Google, de sons e vidèos Archive.org, de vidèos WeGame e Gametrailers, de forums Tangler e de vidèos GoGreenTube',
+);
+
 /** Polish (polski)
  * @author Chrumps
  * @author Sp5uhe
