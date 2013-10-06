@@ -37,6 +37,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'YouTube',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:YouTube',
 	'version' => '1.8.1',
 	'author' => 'Przemek Piotrowski',
 	'descriptionmsg' => 'youtube-desc',
