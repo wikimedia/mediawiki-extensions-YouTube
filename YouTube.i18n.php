@@ -69,6 +69,13 @@ $messages['ca'] = array(
 	'youtube-desc' => 'Incrusta les pel·lícules de YouTube i de Google Video, àudio i vídeo Archive.org, WeGame i vídeo GameTrailers, fòrum tangle i vídeo GoGreenTube',
 );
 
+/** Czech (česky)
+ * @author Mormegil
+ */
+$messages['cs'] = array(
+	'youtube-desc' => 'Vkládá filmy z YouTube a Google Video, audio a video z Archive.org, videa z WeGame a Gametrailers, Tangler forum a videa z GoGreenTube',
+);
+
 /** Welsh (Cymraeg)
  * @author Pwyll
  */
