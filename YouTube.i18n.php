@@ -119,6 +119,13 @@ $messages['es'] = array(
 	'youtube-desc' => 'Incorpora películas de Youtube y Google Video, audio y vídeo de Archive.org, vídeos de WeGame y Gametrailers, el foro Tangler, y vídeos de GoGreenTube',
 );
 
+/** Basque (euskara)
+ * @author Theklan
+ */
+$messages['eu'] = array(
+	'youtube-desc' => 'YouTube eta Google Video filmeak, Archive.org audio eta bideoak, WeGame eta Gametrailers bideoak, Tangler foroak eta GoGreenTube bideoak txertatzen ditu',
+);
+
 /** Persian (فارسی)
  * @author Ladsgroup
  */
