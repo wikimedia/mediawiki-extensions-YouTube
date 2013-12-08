@@ -374,6 +374,13 @@ $messages['tl'] = array(
 	'youtube-desc' => 'Nagbabaon ng mga pelikula ng YouTube at Bidyo ng Google, audio at bidyo ng Archive.org, bidyo ng WeGame at Gametrailers, poro ng Tangler, at bidyo ng GoGreenTube',
 );
 
+/** Turkish (Türkçe)
+ * @author Joseph
+ */
+$messages['tr'] = array(
+	'youtube-desc' => 'YouTube ve Google Video filmlerini, Archive.org ses ve videolarını, WeGame ve Gametrailers videolarını, Tangler forumunu, ve GoGreenTube videolarını gömer',
+);
+
 /** Ukrainian (українська)
  * @author Dim Grits
  */
