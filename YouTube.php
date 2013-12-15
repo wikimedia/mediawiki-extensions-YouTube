@@ -38,7 +38,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'YouTube',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:YouTube',
-	'version' => '1.8.1',
+	'version' => '1.8.2',
 	'author' => 'Przemek Piotrowski',
 	'descriptionmsg' => 'youtube-desc',
 );
@@ -61,17 +61,19 @@ function wfYouTube( &$parser ) {
 	return true;
 }
 
+/**
+ * Get the YouTube video ID from the supplied URL.
+ *
+ * @param $url String: YouTube video URL
+ * @return String|boolean: video ID on success, boolean false on failure
+ */
 function embedYouTube_url2ytid( $url ) {
-	$id = $url;
-
-	if ( preg_match( '/^http:\/\/www\.youtube\.com\/watch\?v=(.+)$/', $url, $preg ) ) {
-		$id = $preg[1];
-	} elseif( preg_match( '/^http:\/\/www\.youtube\.com\/v\/([^&]+)(&autoplay=[0-1])?$/', $url, $preg ) ) {
+	// @see http://linuxpanda.wordpress.com/2013/07/24/ultimate-best-regex-pattern-to-get-grab-parse-youtube-video-id-from-any-youtube-link-url/
+	$pattern = '~(?:http|https|)(?::\/\/|)(?:www.|)(?:youtu\.be\/|youtube\.com(?:\/embed\/|\/v\/|\/watch\?v=|\/ytscreeningroom\?v=|\/feeds\/api\/videos\/|\/user\S*[^\w\-\s]|\S*[^\w\-\s]))([\w\-]{11})[a-z0-9;:@?&%=+\/\$_.-]*~i';
+	$id = false;
+	if ( preg_match( $pattern, $url, $preg ) ) {
 		$id = $preg[1];
 	}
-
-	preg_match( '/([0-9A-Za-z_-]+)/', $id, $preg );
-	$id = $preg[1];
 
 	return $id;
 }
@@ -86,16 +88,80 @@ function embedYouTube( $input, $argv, $parser ) {
 	} elseif ( !empty( $input ) ) {
 		$ytid = embedYouTube_url2ytid( $input );
 	}
-	if ( !empty( $argv['width'] ) && settype( $argv['width'], 'integer' ) && ( $width_max >= $argv['width'] ) ) {
-		$width = $argv['width'];
-	}
-	if ( !empty( $argv['height'] ) && settype( $argv['height'], 'integer' ) && ( $height_max >= $argv['height'] ) ) {
-		$height = $argv['height'];
+
+	// Did we not get an ID at all? That can happen if someone enters outright
+	// gibberish and/or something that's not a YouTube URL.
+	// Let's not even bother with generating useless HTML.
+	if ( $ytid === false ) {
+		return '';
 	}
 
-	if ( !empty( $ytid ) ) {
-		$url = "http://www.youtube.com/v/{$ytid}";
-		return "<object type=\"application/x-shockwave-flash\" data=\"{$url}\" width=\"{$width}\" height=\"{$height}\"><param name=\"movie\" value=\"{$url}\"/><param name=\"wmode\" value=\"transparent\"/></object>";
+	// Which technology to use for embedding -- HTML5 or Flash Player?
+	if ( !empty( $argv['type'] ) && strtolower( $argv['type'] ) == 'flash' ) {
+		$width = $width_max = 425;
+		$height = $height_max = 355;
+
+		if (
+			!empty( $argv['width'] ) &&
+			filter_var( $argv['width'], FILTER_VALIDATE_INT, array( 'options' => array( 'min_range' => 0 ) ) ) &&
+			$argv['width'] <= $width_max
+		)
+		{
+			$width = $argv['width'];
+		}
+		if (
+			!empty( $argv['height'] ) &&
+			filter_var( $argv['height'], FILTER_VALIDATE_INT, array( 'options' => array( 'min_range' => 0 ) ) ) &&
+			$argv['height'] <= $height_max
+		)
+		{
+			$height = $argv['height'];
+		}
+
+		$urlBase = '//www.youtube.com/v/';
+		if ( !empty( $ytid ) ) {
+			$url = $urlBase . $ytid;
+			return "<object type=\"application/x-shockwave-flash\" data=\"{$url}\" width=\"{$width}\" height=\"{$height}\"><param name=\"movie\" value=\"{$url}\"/><param name=\"wmode\" value=\"transparent\"/></object>";
+		}
+	} else {
+		// If the type argument wasn't supplied, default to HTML5, since that's
+		// what YouTube offers by default as well
+		$width = 560;
+		$height = 315;
+		$maxWidth = 960;
+		$maxHeight = 720;
+
+		if (
+			!empty( $argv['width'] ) &&
+			filter_var( $argv['width'], FILTER_VALIDATE_INT, array( 'options' => array( 'min_range' => 0 ) ) ) &&
+			$argv['width'] <= $maxWidth
+		)
+		{
+			$width = $argv['width'];
+		}
+		if (
+			!empty( $argv['height'] ) &&
+			filter_var( $argv['height'], FILTER_VALIDATE_INT, array( 'options' => array( 'min_range' => 0 ) ) ) &&
+			$argv['height'] <= $maxHeight
+		)
+		{
+			$height = $argv['height'];
+		}
+
+		// Support YouTube's "enhanced privacy mode", in which "YouTube won’t
+		// store information about visitors on your web page unless they play
+		// the video" if the privacy argument was supplied
+		// @see https://support.google.com/youtube/answer/171780?expand=PrivacyEnhancedMode#privacy
+		if ( !empty( $argv['privacy'] ) ) {
+			$urlBase = '//www.youtube-nocookie.com/embed/';
+		} else {
+			$urlBase = '//www.youtube.com/embed/';
+		}
+
+		if ( !empty( $ytid ) ) {
+			$url = $urlBase . $ytid;
+			return "<iframe width=\"{$width}\" height=\"{$height}\" src=\"{$url}\" frameborder=\"0\" allowfullscreen></iframe>";
+		}
 	}
 }
 
