@@ -71,7 +71,10 @@ function embedYouTube_url2ytid( $url ) {
 	// @see http://linuxpanda.wordpress.com/2013/07/24/ultimate-best-regex-pattern-to-get-grab-parse-youtube-video-id-from-any-youtube-link-url/
 	$pattern = '~(?:http|https|)(?::\/\/|)(?:www.|)(?:youtu\.be\/|youtube\.com(?:\/embed\/|\/v\/|\/watch\?v=|\/ytscreeningroom\?v=|\/feeds\/api\/videos\/|\/user\S*[^\w\-\s]|\S*[^\w\-\s]))([\w\-]{11})[a-z0-9;:@?&%=+\/\$_.-]*~i';
 	$id = false;
+
 	if ( preg_match( $pattern, $url, $preg ) ) {
+		$id = $preg[1];
+	} elseif ( preg_match( '/([0-9A-Za-z_-]+)/', $url, $preg ) ) {
 		$id = $preg[1];
 	}
 
