@@ -99,6 +99,19 @@ function embedYouTube( $input, $argv, $parser ) {
 		return '';
 	}
 
+	// Support the pixel unit (px) in height/width parameters, because apparently
+	// a lot of people use it there.
+	// This way these parameters won't fail the filter_var() tests below if the
+	// user-supplied values were like 450px or 200px or something instead of
+	// 450 or 200
+	if ( !empty( $argv['height'] ) ) {
+		$argv['height'] = str_replace( 'px', '', $argv['height'] );
+	}
+
+	if ( !empty( $argv['width'] ) ) {
+		$argv['width'] = str_replace( 'px', '', $argv['width'] );
+	}
+
 	// Which technology to use for embedding -- HTML5 or Flash Player?
 	if ( !empty( $argv['type'] ) && strtolower( $argv['type'] ) == 'flash' ) {
 		$width = $width_max = 425;
