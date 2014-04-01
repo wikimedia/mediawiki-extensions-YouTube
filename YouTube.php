@@ -38,12 +38,13 @@ $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'YouTube',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:YouTube',
-	'version' => '1.8.2',
+	'version' => '1.9.0',
 	'author' => 'Przemek Piotrowski',
 	'descriptionmsg' => 'youtube-desc',
 );
 
 $dir = dirname( __FILE__ ) . '/';
+$wgMessagesDirs['YouTube'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['YouTube'] = $dir . 'YouTube.i18n.php';
 
 $wgHooks['ParserFirstCallInit'][] = 'wfYouTube';
