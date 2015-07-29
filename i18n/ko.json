@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kwj2772"
+			"Kwj2772",
+			"아라"
 		]
 	},
-	"youtube-desc": "유튜브나 구글 비디오 동영상과 Archive.org 오디오와 비디오, WeGame과 Gametrailers 비디오, Tangler 포럼, GoGreenTube 비디오를 삽입"
+	"youtube-desc": "YouTube와 Google 비디오 동영상, Archive.org 오디오와 비디오, WeGame 및 Gametrailers 비디오, Tangler 포럼, GoGreenTube 비디오를 포함합니다"
 }
