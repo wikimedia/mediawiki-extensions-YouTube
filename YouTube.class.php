@@ -44,6 +44,9 @@ class YouTube {
 		$parser->setHook( 'gtrailer', array( __CLASS__, 'embedGametrailers' ) );
 		$parser->setHook( 'nicovideo', array( __CLASS__, 'embedNicovideo' ) );
 		$parser->setHook( 'ggtube', array( __CLASS__, 'embedGoGreenTube' ) );
+		$parser->setHook( 'daumpot', 'embedDaumPot' );
+		$parser->setHook( 'dailymotion', 'embedDailyMotion' );
+		$parser->setHook( 'vimeo', 'embedVimeo' );
 		return true;
 	}
 
