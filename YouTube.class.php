@@ -513,8 +513,8 @@ class YouTube {
 	}
 	function embedDaumPot( $input, $argv, $parser ) {
 		$dpid = '';
-		$width = $max_width = 640;
-		$height = $max_height = 360;
+		$width = $max_width = 540;
+		$height = $max_height = 315;
 	
 		if ( !empty( $argv['dpid'] ) ) {
 			$dpid = embedYouTube_url2dpid( $argv['dpid'] );
@@ -587,8 +587,8 @@ class YouTube {
 	}
 	function embedVimeo( $input, $argv, $parser ) {
 		$vmid = '';
-		$width = $max_width = 640;
-		$height = $max_height = 360;
+		$width = $max_width = 560;
+		$height = $max_height = 315;
 	
 		if ( !empty( $argv['vmid'] ) ) {
 			$vmid = embedYouTube_url2vmid( $argv['vmid'] );
