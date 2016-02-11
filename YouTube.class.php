@@ -529,50 +529,50 @@ class YouTube {
 			$argv['width'] = str_replace( 'px', '', $argv['width'] );
 			if ( $argv['width'] <= $max_width ) {
 				$width = $argv['width'];
+			}
 		}
-	}
 	
-	if ( !empty( $dpid ) ) {
+		if ( !empty( $dpid ) ) {
 		return "<iframe width='{$width}' height='{$height}' src='//videofarm.daum.net/controller/video/viewer/Video.html?vid={$dpid}&play_loc=undefined&alert=true' frameborder='0' scrolling='no' ></iframe>";
+			}
+	}
+	function embedYouTube_url2dmid( $url ) {
+		$id = $url;
+		if( preg_match( '/^(?:http|https|)(?::\/\/|)(?:www\.)dailymotion\.com\/(?:embed\/)?video\/([0-9a-z]+).*$/', $url, $preg ) ) {
+			$id = $preg[1];
+		} elseif ( preg_match( '/^(?:http|https|)(?::\/\/|)dai\.ly\/([0-9a-z]+)$', $url, $preg ) ) {
+			$id = $preg[1];
 		}
-	}
-function embedYouTube_url2dmid( $url ) {
-	$id = $url;
-	if( preg_match( '/^(?:http|https|)(?::\/\/|)(?:www\.)dailymotion\.com\/(?:embed\/)?video\/([0-9a-z]+).*$/', $url, $preg ) ) {
+		preg_match( '/([0-9a-z]+)/', $id, $preg );
 		$id = $preg[1];
-	} elseif ( preg_match( '/^(?:http|https|)(?::\/\/|)dai\.ly\/([0-9a-z]+)$', $url, $preg ) ) {
-		$id = $preg[1];
+		return $id;
 	}
-	preg_match( '/([0-9a-z]+)/', $id, $preg );
-	$id = $preg[1];
-	return $id;
-}
-function embedDailyMotion( $input, $argv, $parser ) {
-	$dmid = '';
-	$width = $max_width = 560;
-	$height = $max_height = 315;
+	function embedDailyMotion( $input, $argv, $parser ) {
+		$dmid = '';
+		$width = $max_width = 560;
+		$height = $max_height = 315;
 	
-	if ( !empty( $argv['dmid'] ) ) {
-		$dmid = embedYouTube_url2dmid( $argv['dmid'] );
-	} elseif ( !empty( $input ) ) {
+		if ( !empty( $argv['dmid'] ) ) {
+			$dmid = embedYouTube_url2dmid( $argv['dmid'] );
+		} elseif ( !empty( $input ) ) {
 		$dmid = embedYouTube_url2dmid( $input );
-	}
-	
-	if ( !empty( $argv['height'] ) ) {
-		$argv['height'] = str_replace( 'px', '', $argv['height'] );
-		if ( $argv['height'] <= $max_height ) {
-			$height = $argv['height'];
 		}
-	}
-	if ( !empty( $argv['width'] ) ) {
-		$argv['width'] = str_replace( 'px', '', $argv['width'] );
-		if ( $argv['width'] <= $max_width ) {
-			$width = $argv['width'];
-		}
-	}
 	
-	return "<iframe frameborder='0' width='{$width}' height='{$height}' src='//www.dailymotion.com/embed/video/{$dmid}' allowfullscreen></iframe>";
-}
+		if ( !empty( $argv['height'] ) ) {
+			$argv['height'] = str_replace( 'px', '', $argv['height'] );
+			if ( $argv['height'] <= $max_height ) {
+				$height = $argv['height'];
+			}
+		}
+		if ( !empty( $argv['width'] ) ) {
+			$argv['width'] = str_replace( 'px', '', $argv['width'] );
+			if ( $argv['width'] <= $max_width ) {
+				$width = $argv['width'];
+			}
+		}
+	
+		return "<iframe frameborder='0' width='{$width}' height='{$height}' src='//www.dailymotion.com/embed/video/{$dmid}' allowfullscreen></iframe>";
+	}
 function embedYouTube_url2vmid( $url ) {
 	$id = $url;
 	if( preg_match( '/^(?:http|https|)(?::\/\/|)(?:player\.)vimeo\.com\/(?:video\/|[a-z\/]+|)([0-9]+)$/', $url, $preg ) ) {
