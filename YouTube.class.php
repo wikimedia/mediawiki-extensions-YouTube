@@ -154,11 +154,7 @@ class YouTube {
 			// store information about visitors on your web page unless they play
 			// the video" if the privacy argument was supplied
 			// @see https://support.google.com/youtube/answer/171780?expand=PrivacyEnhancedMode#privacy
-			if ( !empty( $argv['privacy'] ) ) {
-				$urlBase = '//www.youtube-nocookie.com/embed/';
-			} else {
-				$urlBase = '//www.youtube.com/embed/';
-			}
+			$urlBase = '//www.youtube-nocookie.com/embed/';
 
 			if ( !empty( $ytid ) ) {
 				$url = $urlBase . $ytid;
