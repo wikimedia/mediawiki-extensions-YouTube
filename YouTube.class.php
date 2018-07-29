@@ -430,16 +430,32 @@ class YouTube {
 
 	public static function embedNicovideo( $input, $argv, $parser ) {
 		$nvid = '';
+		$width  = 400;
+		$height = 326;
 
 		if ( !empty( $argv['nvid'] ) ) {
 			$nvid = self::url2nvid( $argv['nvid'] );
 		} elseif ( !empty( $input ) ) {
 			$nvid = self::url2nvid( $input );
 		}
+		if (
+			!empty( $argv['width'] ) &&
+			settype( $argv['width'], 'integer' )
+		)
+		{
+			$width = $argv['width'];
+		}
+		if (
+			!empty( $argv['height'] ) &&
+			settype( $argv['height'], 'integer' )
+		)
+		{
+			$height = $argv['height'];
+		}
 
 		if ( !empty( $nvid ) ) {
-			$url = "http://ext.nicovideo.jp/thumb_watch/{$nvid}";
-			return "<script type=\"text/javascript\" src=\"{$url}\"></script>";
+			$url = "https://embed.nicovideo.jp/watch/{$nvid}";
+			return "<iframe width=\"{$width}\" height=\"{$height}\" src=\"{$url}\"></iframe>";
 		}
 	}
 
