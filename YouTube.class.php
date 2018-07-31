@@ -36,14 +36,12 @@ class YouTube {
 	 */
 	public static function registerTags( &$parser ) {
 		$parser->setHook( 'youtube', [ __CLASS__, 'embedYouTube' ] );
-		$parser->setHook( 'gvideo', [ __CLASS__, 'embedGoogleVideo' ] );
 		$parser->setHook( 'aovideo', [ __CLASS__, 'embedArchiveOrgVideo' ] );
 		$parser->setHook( 'aoaudio', [ __CLASS__, 'embedArchiveOrgAudio' ] );
 		$parser->setHook( 'wegame', [ __CLASS__, 'embedWeGame' ] );
 		$parser->setHook( 'tangler', [ __CLASS__, 'embedTangler' ] );
 		$parser->setHook( 'gtrailer', [ __CLASS__, 'embedGametrailers' ] );
 		$parser->setHook( 'nicovideo', [ __CLASS__, 'embedNicovideo' ] );
-		$parser->setHook( 'ggtube', [ __CLASS__, 'embedGoGreenTube' ] );
 	}
 
 	/**
@@ -159,44 +157,6 @@ class YouTube {
 				$url = $urlBase . $ytid;
 				return "<iframe width=\"{$width}\" height=\"{$height}\" src=\"{$url}\" frameborder=\"0\" allowfullscreen></iframe>";
 			}
-		}
-	}
-
-	public static function url2gvid( $url ) {
-		$id = $url;
-
-		if ( preg_match( '/^http:\/\/video\.google\.com\/videoplay\?docid=([^&]+)(&hl=.+)?$/', $url, $preg ) ) {
-			$id = $preg[1];
-		} elseif ( preg_match( '/^http:\/\/video\.google\.com\/googleplayer\.swf\?docId=(.+)$/', $url, $preg ) ) {
-			$id = $preg[1];
-		}
-
-		preg_match( '/([0-9-]+)/', $id, $preg );
-		$id = $preg[1];
-
-		return $id;
-	}
-
-	public static function embedGoogleVideo( $input, $argv, $parser ) {
-		$gvid   = '';
-		$width  = $width_max  = 400;
-		$height = $height_max = 326;
-
-		if ( !empty( $argv['gvid'] ) ) {
-			$gvid = self::url2gvid( $argv['gvid'] );
-		} elseif ( !empty( $input ) ) {
-			$gvid = self::url2gvid( $input );
-		}
-		if ( !empty( $argv['width'] ) && settype( $argv['width'], 'integer' ) && ( $width_max >= $argv['width'] ) ) {
-			$width = $argv['width'];
-		}
-		if ( !empty( $argv['height'] ) && settype( $argv['height'], 'integer' ) && ( $height_max >= $argv['height'] ) ) {
-			$height = $argv['height'];
-		}
-
-		if ( !empty( $gvid ) ) {
-			$url = "http://video.google.com/googleplayer.swf?docId={$gvid}";
-			return "<object type=\"application/x-shockwave-flash\" data=\"{$url}\" width=\"{$width}\" height=\"{$height}\"><param name=\"movie\" value=\"{$url}\"/><param name=\"wmode\" value=\"transparent\"/></object>";
 		}
 	}
 
@@ -455,56 +415,6 @@ class YouTube {
 		if ( !empty( $nvid ) ) {
 			$url = "https://embed.nicovideo.jp/watch/{$nvid}";
 			return "<iframe width=\"{$width}\" height=\"{$height}\" src=\"{$url}\"></iframe>";
-		}
-	}
-
-	public static function url2ggid( $url ) {
-		$id = $url;
-
-		if ( preg_match( '/^http:\/\/www\.gogreentube\.com\/watch\.php\?v=(.+)$/', $url, $preg ) ) {
-			$id = $preg[1];
-		} elseif ( preg_match( '/^http:\/\/www\.gogreentube\.com\/embed\/(.+)$/', $url, $preg ) ) {
-			$id = $preg[1];
-		}
-
-		preg_match( '/([0-9A-Za-z]+)/', $id, $preg );
-		$id = $preg[1];
-
-		return $id;
-	}
-
-	public static function embedGoGreenTube( $input, $argv, $parser ) {
-		$ggid = '';
-		$width  = $width_max  = 432;
-		$height = $height_max = 394;
-
-		if ( !empty( $argv['ggid'] ) ) {
-			$ggid = self::url2ggid( $argv['ggid'] );
-		} elseif ( !empty( $input ) ) {
-			$ggid = self::url2ggid( $input );
-		}
-
-		if (
-			!empty( $argv['width'] ) &&
-			settype( $argv['width'], 'integer' ) &&
-			( $width_max >= $argv['width'] )
-		)
-		{
-			$width = $argv['width'];
-		}
-
-		if (
-			!empty( $argv['height'] ) &&
-			settype( $argv['height'], 'integer' ) &&
-			( $height_max >= $argv['height'] )
-		)
-		{
-			$height = $argv['height'];
-		}
-
-		if ( !empty( $ggid ) ) {
-			$url = "http://www.gogreentube.com/embed/{$ggid}";
-			return "<script type=\"text/javascript\" src=\"{$url}\"></script>";
 		}
 	}
 
