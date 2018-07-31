@@ -35,16 +35,15 @@ class YouTube {
 	 * Register all the new tags with the Parser.
 	 */
 	public static function registerTags( &$parser ) {
-		$parser->setHook( 'youtube', array( __CLASS__, 'embedYouTube' ) );
-		$parser->setHook( 'gvideo', array( __CLASS__, 'embedGoogleVideo' ) );
-		$parser->setHook( 'aovideo', array( __CLASS__, 'embedArchiveOrgVideo' ) );
-		$parser->setHook( 'aoaudio', array( __CLASS__, 'embedArchiveOrgAudio' ) );
-		$parser->setHook( 'wegame', array( __CLASS__, 'embedWeGame' ) );
-		$parser->setHook( 'tangler', array( __CLASS__, 'embedTangler' ) );
-		$parser->setHook( 'gtrailer', array( __CLASS__, 'embedGametrailers' ) );
-		$parser->setHook( 'nicovideo', array( __CLASS__, 'embedNicovideo' ) );
-		$parser->setHook( 'ggtube', array( __CLASS__, 'embedGoGreenTube' ) );
-		return true;
+		$parser->setHook( 'youtube', [ __CLASS__, 'embedYouTube' ] );
+		$parser->setHook( 'gvideo', [ __CLASS__, 'embedGoogleVideo' ] );
+		$parser->setHook( 'aovideo', [ __CLASS__, 'embedArchiveOrgVideo' ] );
+		$parser->setHook( 'aoaudio', [ __CLASS__, 'embedArchiveOrgAudio' ] );
+		$parser->setHook( 'wegame', [ __CLASS__, 'embedWeGame' ] );
+		$parser->setHook( 'tangler', [ __CLASS__, 'embedTangler' ] );
+		$parser->setHook( 'gtrailer', [ __CLASS__, 'embedGametrailers' ] );
+		$parser->setHook( 'nicovideo', [ __CLASS__, 'embedNicovideo' ] );
+		$parser->setHook( 'ggtube', [ __CLASS__, 'embedGoGreenTube' ] );
 	}
 
 	/**
@@ -105,7 +104,7 @@ class YouTube {
 
 			if (
 				!empty( $argv['width'] ) &&
-				filter_var( $argv['width'], FILTER_VALIDATE_INT, array( 'options' => array( 'min_range' => 0 ) ) ) &&
+				filter_var( $argv['width'], FILTER_VALIDATE_INT, [ 'options' => [ 'min_range' => 0 ] ] ) &&
 				$argv['width'] <= $width_max
 			)
 			{
@@ -113,7 +112,7 @@ class YouTube {
 			}
 			if (
 				!empty( $argv['height'] ) &&
-				filter_var( $argv['height'], FILTER_VALIDATE_INT, array( 'options' => array( 'min_range' => 0 ) ) ) &&
+				filter_var( $argv['height'], FILTER_VALIDATE_INT, [ 'options' => [ 'min_range' => 0 ] ] ) &&
 				$argv['height'] <= $height_max
 			)
 			{
@@ -135,7 +134,7 @@ class YouTube {
 
 			if (
 				!empty( $argv['width'] ) &&
-				filter_var( $argv['width'], FILTER_VALIDATE_INT, array( 'options' => array( 'min_range' => 0 ) ) ) &&
+				filter_var( $argv['width'], FILTER_VALIDATE_INT, [ 'options' => [ 'min_range' => 0 ] ] ) &&
 				$argv['width'] <= $maxWidth
 			)
 			{
@@ -143,7 +142,7 @@ class YouTube {
 			}
 			if (
 				!empty( $argv['height'] ) &&
-				filter_var( $argv['height'], FILTER_VALIDATE_INT, array( 'options' => array( 'min_range' => 0 ) ) ) &&
+				filter_var( $argv['height'], FILTER_VALIDATE_INT, [ 'options' => [ 'min_range' => 0 ] ] ) &&
 				$argv['height'] <= $maxHeight
 			)
 			{
@@ -352,7 +351,7 @@ class YouTube {
 			$gid = $preg[2];
 		}
 
-		return array( $tid, $gid );
+		return [ $tid, $gid ];
 	}
 
 	public static function embedTangler( $input, $argv, $parser ) {

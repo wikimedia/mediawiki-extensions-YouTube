@@ -17,9 +17,7 @@
 		]
 	},
 	"Hooks": {
-		"ParserFirstCallInit": [
-			"YouTube::registerTags"
-		]
+		"ParserFirstCallInit": "YouTube::registerTags"
 	},
 	"manifest_version": 1
 }
