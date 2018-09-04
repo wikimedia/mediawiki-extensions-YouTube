@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jean-Frédéric"
+			"Jean-Frédéric",
+			"Wladek92"
 		]
 	},
-	"youtube-desc": "Incorpore des vidéos YouTube et Google Video, des sons et vidéos Archive.org, des vidéos WeGame et Gametrailers, des forums Tangler et des vidéos GoGreenTube"
+	"youtube-desc": "Incorpore les films YouTube, les sons et les vidéos Archive.org, les vidéos WeGame et Gametrailers, et le forum Tangler"
 }

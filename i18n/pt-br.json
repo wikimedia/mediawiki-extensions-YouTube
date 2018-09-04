@@ -2,8 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Giro720",
-			"Tuliouel"
+			"Tuliouel",
+			"Eduardo Addad de Oliveira"
 		]
 	},
-	"youtube-desc": "Incorpora vídeos do YouTube e Google Video, áudio e vídeo do Archive.org, vídeo do WeGame e Gametrailers, fórum do Tangler e vídeo do GoGreenTube"
+	"youtube-desc": "Incorpora filmes do YouTube, áudio e vídeo de Archive.org, vídeo de WeGame e Gametrailers, e o fórum Tangler"
 }
