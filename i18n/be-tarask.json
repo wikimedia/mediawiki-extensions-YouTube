@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jim-by"
+			"Jim-by",
+			"Red Winged Duck"
 		]
 	},
-	"youtube-desc": "Убудаваны прайгравальнік фільмаў YouTube і Google Video, Archive.org аўдыа і відэа, WeGame і Gametrailers, форум Tangler, і відэа GoGreenTube"
+	"youtube-desc": "Убудоўвае фільмы з YouTube, аўдыё і відэа з Archive.org, відэа з WeGame і Gametrailers, форум Tangler"
 }
