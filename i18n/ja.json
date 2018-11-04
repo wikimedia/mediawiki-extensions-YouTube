@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"青子守歌"
+			"青子守歌",
+			"Shirayuki"
 		]
 	},
-	"youtube-desc": "YouTubeやGoogleビデオの動画、Archive.orgの音声や動画、WeGameとGametrailersの動画、TanglerフォーラムとGoGreenTube動画を埋め込む"
+	"youtube-desc": "YouTubeの動画、Archive.orgの音声や動画、WeGameとGametrailersの動画、Tanglerフォーラムを埋め込む"
 }
