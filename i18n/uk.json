@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dim Grits"
+			"Dim Grits",
+			"Piramidion"
 		]
 	},
-	"youtube-desc": "Вмонтовує відеороліки з YouTube і Google Video, аудіо і відео з Archive.org, WeGame, Gametrailers, Tangler і GoGreenTube"
+	"youtube-desc": "Вмонтовує фільми з YouTube і Google Video, аудіо і відео з Archive.org, а також відео з WeGame, Gametrailers, та форуму Tangler"
 }
