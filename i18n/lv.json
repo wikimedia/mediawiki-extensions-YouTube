@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Silraks"
+			"Silraks",
+			"Papuass"
 		]
 	},
-	"youtube-desc": "Ieguļ YouTube un Google Video filmas, Archive.org audio un video, WeGame un Gametrailers video, Tangler forum un GoGreenTube video"
+	"youtube-desc": "Ļauj iekļaut YouTube filmas, Archive.org audio un video, WeGame un Gametrailers video un Tangler forumu"
 }
