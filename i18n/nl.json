@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand"
+			"Siebrand",
+			"Mainframe98"
 		]
 	},
-	"youtube-desc": "Maakt het mogelijk video in te sluiten van YouTube en Google Video, audio en video van Archive.org, video van WeGame en Gametrailers en video van GoGreenTube"
+	"youtube-desc": "Maakt het mogelijk video in te sluiten van YouTube, audio en video van Archive.org, video van WeGame en Gametrailers en video van het Tangler forum"
 }
