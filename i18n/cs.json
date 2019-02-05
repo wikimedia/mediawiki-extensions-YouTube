@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mormegil"
+			"Mormegil",
+			"Patriccck"
 		]
 	},
-	"youtube-desc": "Vkládá filmy z YouTube a Google Video, audio a video z Archive.org, videa z WeGame a Gametrailers, Tangler forum a videa z GoGreenTube"
+	"youtube-desc": "Vkládá filmy z YouTube, audio a video z Archive.org, videa z WeGame a Gametrailers a Tangler forum"
 }
