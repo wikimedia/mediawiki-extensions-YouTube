@@ -2,8 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Rancher",
-			"BadDog"
+			"BadDog",
+			"Zoranzoki21"
 		]
 	},
-	"youtube-desc": "Убацује видео-снимке са Јутјуба."
+	"youtube-desc": "Убацује видео-снимке са Јутјуба, Archive.org аудио и видео, WeGame и Gametrailers видео, и Tangler форума."
 }
