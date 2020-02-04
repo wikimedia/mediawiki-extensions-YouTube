@@ -2,8 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Locos epraix",
-			"Vivaelcelta"
+			"Vivaelcelta",
+			"DannyS712"
 		]
 	},
-	"youtube-desc": "Incorpora películas de Youtube y Google Video, audio y vídeo de Archive.org, vídeos de WeGame y Gametrailers, el foro Tangler, y vídeos de GoGreenTube"
+	"youtube-desc": "Incorpora películas de Youtube, audio y vídeo de Archive.org, vídeos de WeGame y Gametrailers, y el foro Tangler."
 }
