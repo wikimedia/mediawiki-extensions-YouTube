@@ -7,7 +7,7 @@
  * @ingroup Extensions
  * @author Przemek Piotrowski <ppiotr@wikia-inc.com> for Wikia, Inc.
  * @copyright © 2006-2008, Wikia Inc.
- * @licence GNU General Public Licence 2.0 or later
+ * @license GPL-2.0-or-later
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -33,6 +33,8 @@ class YouTube {
 
 	/**
 	 * Register all the new tags with the Parser.
+	 *
+	 * @param Parser &$parser
 	 */
 	public static function registerTags( &$parser ) {
 		$parser->setHook( 'youtube', [ __CLASS__, 'embedYouTube' ] );
@@ -104,16 +106,14 @@ class YouTube {
 				!empty( $argv['width'] ) &&
 				filter_var( $argv['width'], FILTER_VALIDATE_INT, [ 'options' => [ 'min_range' => 0 ] ] ) &&
 				$argv['width'] <= $width_max
-			)
-			{
+			) {
 				$width = $argv['width'];
 			}
 			if (
 				!empty( $argv['height'] ) &&
 				filter_var( $argv['height'], FILTER_VALIDATE_INT, [ 'options' => [ 'min_range' => 0 ] ] ) &&
 				$argv['height'] <= $height_max
-			)
-			{
+			) {
 				$height = $argv['height'];
 			}
 
@@ -134,16 +134,14 @@ class YouTube {
 				!empty( $argv['width'] ) &&
 				filter_var( $argv['width'], FILTER_VALIDATE_INT, [ 'options' => [ 'min_range' => 0 ] ] ) &&
 				$argv['width'] <= $maxWidth
-			)
-			{
+			) {
 				$width = $argv['width'];
 			}
 			if (
 				!empty( $argv['height'] ) &&
 				filter_var( $argv['height'], FILTER_VALIDATE_INT, [ 'options' => [ 'min_range' => 0 ] ] ) &&
 				$argv['height'] <= $maxHeight
-			)
-			{
+			) {
 				$height = $argv['height'];
 			}
 
@@ -187,16 +185,14 @@ class YouTube {
 			!empty( $argv['width'] ) &&
 			settype( $argv['width'], 'integer' ) &&
 			( $width_max >= $argv['width'] )
-		)
-		{
+		) {
 			$width = $argv['width'];
 		}
 		if (
 			!empty( $argv['height'] ) &&
 			settype( $argv['height'], 'integer' ) &&
 			( $height_max >= $argv['height'] )
-		)
-		{
+		) {
 			$height = $argv['height'];
 		}
 
@@ -233,16 +229,14 @@ class YouTube {
 			!empty( $argv['width'] ) &&
 			settype( $argv['width'], 'integer' ) &&
 			( $width_max >= $argv['width'] )
-		)
-		{
+		) {
 			$width = $argv['width'];
 		}
 		if (
 			!empty( $argv['height'] ) &&
 			settype( $argv['height'], 'integer' ) &&
 			( $height_max >= $argv['height'] )
-		)
-		{
+		) {
 			$height = $argv['height'];
 		}
 
@@ -279,16 +273,14 @@ class YouTube {
 			!empty( $argv['width'] ) &&
 			settype( $argv['width'], 'integer' ) &&
 			( $width_max >= $argv['width'] )
-		)
-		{
+		) {
 			$width = $argv['width'];
 		}
 		if (
 			!empty( $argv['height'] ) &&
 			settype( $argv['height'], 'integer' ) &&
 			( $height_max >= $argv['height'] )
-		)
-		{
+		) {
 			$height = $argv['height'];
 		}
 
@@ -357,16 +349,14 @@ class YouTube {
 			!empty( $argv['width'] ) &&
 			settype( $argv['width'], 'integer' ) &&
 			( $width_max >= $argv['width'] )
-		)
-		{
+		) {
 			$width = $argv['width'];
 		}
 		if (
 			!empty( $argv['height'] ) &&
 			settype( $argv['height'], 'integer' ) &&
 			( $height_max >= $argv['height'] )
-		)
-		{
+		) {
 			$height = $argv['height'];
 		}
 
@@ -400,15 +390,13 @@ class YouTube {
 		if (
 			!empty( $argv['width'] ) &&
 			settype( $argv['width'], 'integer' )
-		)
-		{
+		) {
 			$width = $argv['width'];
 		}
 		if (
 			!empty( $argv['height'] ) &&
 			settype( $argv['height'], 'integer' )
-		)
-		{
+		) {
 			$height = $argv['height'];
 		}
 

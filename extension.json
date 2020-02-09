@@ -9,7 +9,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "parserhook",
 	"AutoloadClasses": {
-		"YouTube": "YouTube.class.php"
+		"YouTube": "YouTube.php"
 	},
 	"MessagesDirs": {
 		"YouTube": [
