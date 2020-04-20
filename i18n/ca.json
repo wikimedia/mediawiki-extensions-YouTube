@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"BroOk"
+			"BroOk",
+			"Xavier Dengra"
 		]
 	},
-	"youtube-desc": "Incrusta les pel·lícules de YouTube i de Google Video, àudio i vídeo Archive.org, WeGame i vídeo GameTrailers, fòrum tangle i vídeo GoGreenTube"
+	"youtube-desc": "Incrusta vídeos de YouTube i de Google Video, àudios i vídeos d'Archive.org, vídeos de WeGame i GameTrailers, així com fòrums de Tangler i vídeos de GoGreenTube"
 }
