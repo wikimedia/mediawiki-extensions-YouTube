@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"MuratTheTurkish",
 			"Raymond",
 			"Shirayuki",
 			"Umherirrender"
 		]
 	},
-	"youtube-desc": "{{desc|name=YouTube|url=https://www.mediawiki.org/wiki/Category:YouTube_extensions}}"
+	"youtube-desc": "{{desc|name=YouTube|url=https://www.mediawiki.org/wiki/Extension:YouTube}}"
 }
