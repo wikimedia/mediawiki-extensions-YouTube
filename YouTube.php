@@ -97,6 +97,23 @@ class YouTube {
 			$argv['width'] = str_replace( 'px', '', $argv['width'] );
 		}
 
+		// Define urlArgs - container for every URL argument.
+		$urlArgs = [];
+
+		// Got a timestamp to start on? If yes, include it in URL.
+		if (
+			!empty( $argv['start'] ) &&
+			filter_var( $argv['start'], FILTER_VALIDATE_INT, [ 'options' => [ 'min_range' => 0 ] ] )
+		) {
+			$urlArgs['start'] = $argv['start'];
+		}
+
+		// Go through all the potential URL arguments and get them into one string.
+		$argsStr = '';
+		if ( !empty( $urlArgs ) ) {
+			$argsStr = wfArrayToCgi( $urlArgs );
+		}
+
 		// Which technology to use for embedding -- HTML5 or Flash Player?
 		if ( !empty( $argv['type'] ) && strtolower( $argv['type'] ) == 'flash' ) {
 			$width = $width_max = 425;
@@ -119,7 +136,7 @@ class YouTube {
 
 			$urlBase = '//www.youtube.com/v/';
 			if ( !empty( $ytid ) ) {
-				$url = $urlBase . $ytid;
+				$url = $urlBase . $ytid . $argsStr;
 				return "<object type=\"application/x-shockwave-flash\" data=\"{$url}\" width=\"{$width}\" height=\"{$height}\"><param name=\"movie\" value=\"{$url}\"/><param name=\"wmode\" value=\"transparent\"/></object>";
 			}
 		} else {
@@ -152,7 +169,7 @@ class YouTube {
 			$urlBase = '//www.youtube-nocookie.com/embed/';
 
 			if ( !empty( $ytid ) ) {
-				$url = $urlBase . $ytid;
+				$url = $urlBase . $ytid . $argsStr;
 				return "<iframe width=\"{$width}\" height=\"{$height}\" src=\"{$url}\" frameborder=\"0\" allowfullscreen></iframe>";
 			}
 		}
