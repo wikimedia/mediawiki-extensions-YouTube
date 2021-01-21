@@ -22,5 +22,22 @@
 	"Hooks": {
 		"ParserFirstCallInit": "YouTube::registerTags"
 	},
+	"ResourceModules": {
+		"ext.youtube.lazyload": {
+			"styles": [
+				"youtube.lazyload.less"
+			],
+			"scripts": [
+				"youtube.lazyload.js"
+			]
+		}
+	},
+	"config": {
+		"YouTubeEnableLazyLoad": false
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "YouTube/modules"
+	},
 	"manifest_version": 1
 }

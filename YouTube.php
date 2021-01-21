@@ -66,7 +66,22 @@ class YouTube {
 		return $id;
 	}
 
+	/**
+	 * @param string $input
+	 * @param array $argv
+	 * @param Parser $parser
+	 *
+	 * @return string
+	 */
 	public static function embedYouTube( $input, $argv, $parser ) {
+		global $wgYouTubeEnableLazyLoad;
+
+		// Loads necessary modules for lazy loading:
+		// Video poster image will be loaded first and replaced by the actual video once clicked
+		if ( $wgYouTubeEnableLazyLoad ) {
+			$parser->getOutput()->addModules( 'ext.youtube.lazyload' );
+		}
+
 		$ytid   = '';
 		$width  = $width_max  = 425;
 		$height = $height_max = 355;
@@ -106,6 +121,11 @@ class YouTube {
 			filter_var( $argv['start'], FILTER_VALIDATE_INT, [ 'options' => [ 'min_range' => 0 ] ] )
 		) {
 			$urlArgs['start'] = $argv['start'];
+		}
+
+		// Adds ?autoplay=1 to the URL is the param is set
+		if ( !empty( $argv['autoplay'] ) || $wgYouTubeEnableLazyLoad ) {
+			$urlArgs['autoplay'] = '1';
 		}
 
 		// Go through all the potential URL arguments and get them into one string.
@@ -169,8 +189,20 @@ class YouTube {
 			$urlBase = '//www.youtube-nocookie.com/embed/';
 
 			if ( !empty( $ytid ) ) {
-				$url = $urlBase . $ytid . $argsStr;
-				return "<iframe width=\"{$width}\" height=\"{$height}\" src=\"{$url}\" frameborder=\"0\" allowfullscreen></iframe>";
+				$url = $urlBase . $ytid . '?' . $argsStr;
+				$content = $iframe = "<iframe width=\"{$width}\" height=\"{$height}\" src=\"{$url}\" frameborder=\"0\" allowfullscreen></iframe>";
+				if ( $wgYouTubeEnableLazyLoad ) {
+					$img =
+						'<img width="' . $width . '" height="' . $height . '" src="'
+						. '//img.youtube.com/vi/' . $ytid . '/default.jpg" />';
+					$content =
+						'<div style="width: ' . $width . 'px; height:' . $height . 'px;"'
+						. 'class="ext-YouTube-video ext-YouTube-video--lazy" data-ytid="' . $ytid . '">'
+						. $img
+						. '<!-- ' . $iframe . ' -->'
+						. '</div>';
+				}
+				return $content;
 			}
 		}
 	}

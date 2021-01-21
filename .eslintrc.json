@@ -4,5 +4,12 @@
 		"wikimedia/client",
 		"wikimedia/jquery",
 		"wikimedia/mediawiki"
-	]
+	],
+	"globals": {
+		"jQuuery": true,
+		"mediaWiki": true
+	},
+	"rules": {
+		"no-jquery/no-global-selector": "off"
+	}
 }
