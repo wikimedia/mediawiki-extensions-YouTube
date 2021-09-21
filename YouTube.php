@@ -214,7 +214,7 @@ class YouTube {
 			$id = $preg[1];
 		}
 
-		preg_match( '/([0-9A-Za-z_\/.]+)/', $id, $preg );
+		preg_match( '/([0-9A-Za-z_\/.-]+)/', $id, $preg );
 		$id = $preg[1];
 
 		return $id;
@@ -258,7 +258,7 @@ class YouTube {
 			$id = $preg[1];
 		}
 
-		preg_match( '/([0-9A-Za-z_\/.]+)/', $id, $preg );
+		preg_match( '/([0-9A-Za-z_\/.-]+)/', $id, $preg );
 		$id = $preg[1];
 
 		return $id;
@@ -266,8 +266,8 @@ class YouTube {
 
 	public static function embedArchiveOrgAudio( $input, $argv, $parser ) {
 		$aoaid   = '';
-		$width  = $width_max  = 400;
-		$height = $height_max = 170;
+		$width  = $width_max  = 500;
+		$height = $height_max = 190;
 
 		if ( !empty( $argv['aoaid'] ) ) {
 			$aoaid = self::url2aoaid( $argv['aoaid'] );
@@ -290,8 +290,11 @@ class YouTube {
 		}
 
 		if ( !empty( $aoaid ) ) {
-			$url = urlencode( "http://www.archive.org/audio/xspf-maker.php?identifier={$aoaid}" );
-			return "<object type=\"application/x-shockwave-flash\" data=\"http://www.archive.org/audio/xspf_player.swf?playlist_url={$url}\" width=\"{$width}\" height=\"{$height}\"><param name=\"movie\" value=\"http://www.archive.org/audio/xspf_player.swf?playlist_url={$url}\"/></object>";
+			$uri = "https://archive.org/embed/$aoaid";
+			if ( !empty( $argv['playlist'] ) ) {
+				$uri .= "&playlist=" . (bool)$argv['playlist'];
+			}
+			return "<iframe src=\"$uri\" width=\"$width\" height=\"$height\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>";
 		}
 	}
 
