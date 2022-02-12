@@ -79,7 +79,7 @@ class YouTube {
 		// Loads necessary modules for lazy loading:
 		// Video poster image will be loaded first and replaced by the actual video once clicked
 		if ( $wgYouTubeEnableLazyLoad ) {
-			$parser->getOutput()->addModules( 'ext.youtube.lazyload' );
+			$parser->getOutput()->addModules( [ 'ext.youtube.lazyload' ] );
 		}
 
 		$ytid   = '';
