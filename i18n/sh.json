@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"OC Ripper"
+			"OC Ripper",
+			"Vlad5250"
 		]
 	},
-	"youtube-desc": "Ubacuje isječke iz YouTube i Google Video, zvuk i video iz Archive.org, WeGame i video sa Gametrailers, foruma Tangler i video sa GoGreenTube"
+	"youtube-desc": "Ubacuje isječke iz YouTube, zvuk i video iz Archive.org, video sa WeGame i Gametrailers i foruma Tangler"
 }
