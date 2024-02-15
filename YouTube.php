@@ -190,7 +190,7 @@ class YouTube {
 
 			if ( !empty( $ytid ) ) {
 				$url = $urlBase . $ytid . '?' . $argsStr;
-				$content = $iframe = "<iframe width=\"{$width}\" height=\"{$height}\" src=\"{$url}\" frameborder=\"0\" allowfullscreen></iframe>";
+				$content = $iframe = "<iframe data-extension="youtube" width=\"{$width}\" height=\"{$height}\" src=\"{$url}\" frameborder=\"0\" allowfullscreen></iframe>";
 				if ( $wgYouTubeEnableLazyLoad ) {
 					$img =
 						'<img width="' . $width . '" height="' . $height . '" src="'
@@ -294,7 +294,7 @@ class YouTube {
 			if ( !empty( $argv['playlist'] ) ) {
 				$uri .= "&playlist=" . (bool)$argv['playlist'];
 			}
-			return "<iframe src=\"$uri\" width=\"$width\" height=\"$height\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>";
+			return "<iframe data-extension="youtube" src=\"$uri\" width=\"$width\" height=\"$height\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>";
 		}
 	}
 
