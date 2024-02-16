@@ -40,9 +40,6 @@ class YouTube {
 		$parser->setHook( 'youtube', [ __CLASS__, 'embedYouTube' ] );
 		$parser->setHook( 'aovideo', [ __CLASS__, 'embedArchiveOrgVideo' ] );
 		$parser->setHook( 'aoaudio', [ __CLASS__, 'embedArchiveOrgAudio' ] );
-		$parser->setHook( 'wegame', [ __CLASS__, 'embedWeGame' ] );
-		$parser->setHook( 'tangler', [ __CLASS__, 'embedTangler' ] );
-		$parser->setHook( 'gtrailer', [ __CLASS__, 'embedGametrailers' ] );
 		$parser->setHook( 'nicovideo', [ __CLASS__, 'embedNicovideo' ] );
 	}
 
@@ -295,128 +292,6 @@ class YouTube {
 				$uri .= "&playlist=" . (bool)$argv['playlist'];
 			}
 			return "<iframe data-extension=\"youtube\" src=\"$uri\" width=\"$width\" height=\"$height\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen></iframe>";
-		}
-	}
-
-	public static function url2weid( $url ) {
-		$id = $url;
-
-		if ( preg_match( '/^http:\/\/www\.wegame\.com\/watch\/(.+)\/$/', $url, $preg ) ) {
-			$id = $preg[1];
-		}
-
-		preg_match( '/([0-9A-Za-z_-]+)/', $id, $preg );
-		$id = $preg[1];
-
-		return $id;
-	}
-
-	public static function embedWeGame( $input, $argv, $parser ) {
-		$weid   = '';
-		$width  = $width_max  = 488;
-		$height = $height_max = 387;
-
-		if ( !empty( $argv['weid'] ) ) {
-			$weid = self::url2weid( $argv['weid'] );
-		} elseif ( !empty( $input ) ) {
-			$weid = self::url2weid( $input );
-		}
-		if (
-			!empty( $argv['width'] ) &&
-			settype( $argv['width'], 'integer' ) &&
-			( $width_max >= $argv['width'] )
-		) {
-			$width = $argv['width'];
-		}
-		if (
-			!empty( $argv['height'] ) &&
-			settype( $argv['height'], 'integer' ) &&
-			( $height_max >= $argv['height'] )
-		) {
-			$height = $argv['height'];
-		}
-
-		if ( !empty( $weid ) ) {
-			return "<object type=\"application/x-shockwave-flash\" data=\"http://www.wegame.com/static/flash/player2.swf\" width=\"{$width}\" height=\"{$height}\"><param name=\"flashvars\" value=\"tag={$weid}\"/></object>";
-		}
-	}
-
-	public static function url2tgid( $input ) {
-		$tid = $gid = 0;
-
-		if ( preg_match( '/^id=([0-9]+)\|gId=([0-9]+)$/i', $input, $preg ) ) {
-			$tid = $preg[1];
-			$gid = $preg[2];
-		} elseif ( preg_match( '/^gId=([0-9]+)\|id=([0-9]+)$/i', $input, $preg ) ) {
-			$tid = $preg[2];
-			$gid = $preg[1];
-		} elseif ( preg_match( '/^([0-9]+)\|([0-9]+)$/', $input, $preg ) ) {
-			$tid = $preg[1];
-			$gid = $preg[2];
-		}
-
-		return [ $tid, $gid ];
-	}
-
-	public static function embedTangler( $input, $argv, $parser ) {
-		$tid = $gid = '';
-
-		if ( !empty( $argv['tid'] ) && !empty( $argv['gid'] ) ) {
-			list( $tid, $gid ) = self::url2tgid( "{$argv['tid']}|{$argv['gid']}" );
-		} elseif ( !empty( $input ) ) {
-			list( $tid, $gid ) = self::url2tgid( $input );
-		}
-
-		if ( !empty( $tid ) && !empty( $gid ) ) {
-			return "<p style=\"width: 410px; height: 480px\" id=\"tangler-embed-topic-{$tid}\"></p><script src=\"http://www.tangler.com/widget/embedtopic.js?id={$tid}&gId={$gid}\"></script>";
-		}
-	}
-
-	public static function url2gtid( $url ) {
-		$id = $url;
-
-		if ( preg_match( '/^http:\/\/www\.gametrailers\.com\/player\/(.+)\.html$/', $url, $preg ) ) {
-			$id = $preg[1];
-		} elseif ( preg_match( '/^http:\/\/www\.gametrailers\.com\/remote_wrap\.php\?mid=(.+)$/', $url, $preg ) ) {
-			$id = $preg[1];
-		}
-
-		preg_match( '/([0-9]+)/', $id, $preg );
-		$id = $preg[1];
-
-		return $id;
-	}
-
-	public static function embedGametrailers( $input, $argv, $parser ) {
-		$gtid   = '';
-		$width  = $width_max  = 480;
-		$height = $height_max = 392;
-
-		if ( !empty( $argv['gtid'] ) ) {
-			$gtid = self::url2gtid( $argv['gtid'] );
-		} elseif ( !empty( $input ) ) {
-			$gtid = self::url2gtid( $input );
-		}
-		if (
-			!empty( $argv['width'] ) &&
-			settype( $argv['width'], 'integer' ) &&
-			( $width_max >= $argv['width'] )
-		) {
-			$width = $argv['width'];
-		}
-		if (
-			!empty( $argv['height'] ) &&
-			settype( $argv['height'], 'integer' ) &&
-			( $height_max >= $argv['height'] )
-		) {
-			$height = $argv['height'];
-		}
-
-		if ( !empty( $gtid ) ) {
-			$url = "http://www.gametrailers.com/remote_wrap.php?mid={$gtid}";
-			// return "<object type=\"application/x-shockwave-flash\" width=\"{$width}\" height=\"{$height}\"><param name=\"movie\" value=\"{$url}\"/></object>";
-			// gametrailers' flash doesn't work on FF with object tag alone )-: weird, yt and gvideo are ok )-: valid xhtml no more )-:
-			return "<object classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\"  codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0\" id=\"gtembed\" width=\"{$width}\" height=\"{$height}\">	<param name=\"allowScriptAccess\" value=\"sameDomain\" /> 	<param name=\"allowFullScreen\" value=\"true\" /> <param name=\"movie\" value=\"{$url}\"/> <param name=\"quality\" value=\"high\" /> <embed src=\"{$url}\" swLiveConnect=\"true\" name=\"gtembed\" align=\"middle\" allowScriptAccess=\"sameDomain\" allowFullScreen=\"true\" quality=\"high\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" type=\"application/x-shockwave-flash\" width=\"{$width}\" height=\"{$height}\"></embed> </object>";
 		}
 	}
 
