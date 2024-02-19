@@ -2,8 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Daud I.F. Argana",
-			"IvanLanin"
+			"IvanLanin",
+			"Jack Phoenix"
 		]
 	},
-	"youtube-desc": "Menyertakan film YouTube, audio dan video Archive.org, video WeGame dan Gametrailers, dan forum Tangler"
+	"youtube-desc": "Menyertakan film [https://www.youtube.com/ YouTube], audio dan video [https://archive.org/ Archive.org], dan video [https://www.nicovideo.jp/ Niconico]"
 }

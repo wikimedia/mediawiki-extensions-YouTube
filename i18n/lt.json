@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jack Phoenix",
 			"Mantak111",
 			"Manvydasz"
 		]
 	},
-	"youtube-desc": "Įterpti YouTube vaizdo įrašus, Archive.org vaizdo ir garso įrašus, WeGame ir Gametrailers vaizdo įrašus ir Tangler forumą"
+	"youtube-desc": "Įterpti [https://www.youtube.com/ YouTube] vaizdo įrašus, [https://archive.org/ Archive.org] vaizdo ir garso įrašus, ir [https://www.nicovideo.jp/ Niconico] vaizdo įrašus"
 }

@@ -2,8 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"BroOk",
+			"Jack Phoenix",
 			"Xavier Dengra"
 		]
 	},
-	"youtube-desc": "Incrusta vídeos de YouTube i de Google Video, àudios i vídeos d'Archive.org, vídeos de WeGame i GameTrailers, així com fòrums de Tangler i vídeos de GoGreenTube"
+	"youtube-desc": "Incrusta vídeos de [https://www.youtube.com/ YouTube], àudios i vídeos d'[https://archive.org/ Archive.org], i vídeos de [https://www.nicovideo.jp/ Niconico]"
 }

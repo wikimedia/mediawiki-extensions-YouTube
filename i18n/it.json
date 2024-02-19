@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"Jack Phoenix"
 		]
 	},
-	"youtube-desc": "Incorpora i filmati di YouTube, audio e video Archive.org, video WeGame e Gametrailers e forum Tangler"
+	"youtube-desc": "Incorpora i filmati di [https://www.youtube.com/ YouTube], audio e video [https://archive.org/ Archive.org], e video [https://www.nicovideo.jp/ Niconico]"
 }

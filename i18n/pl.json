@@ -2,8 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
+			"Jack Phoenix",
 			"Sp5uhe"
 		]
 	},
-	"youtube-desc": "Osadza filmy z YouTube, audio i filmy Archive.org, filmy WeGame i GameTrailers oraz forum Tangler"
+	"youtube-desc": "Osadza filmy z [https://www.youtube.com/ YouTube] i [https://www.nicovideo.jp/ Niconico] oraz audio i filmy [https://archive.org/ Archive.org]"
 }

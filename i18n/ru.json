@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Eleferen",
+			"Jack Phoenix",
 			"Vlad5250",
 			"Александр Сигачёв"
 		]
 	},
-	"youtube-desc": "Встраивает фильмы YouTube, аудио и видео Archive.org, видео WeGame, GameTrailers, форум Tangler"
+	"youtube-desc": "Встраивает фильмы [https://www.youtube.com/ YouTube], аудио и видео [https://archive.org/ Archive.org], и видео [https://www.nicovideo.jp/ Niconico]"
 }

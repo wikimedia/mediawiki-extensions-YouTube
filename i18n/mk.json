@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Jack Phoenix"
 		]
 	},
-	"youtube-desc": "Вметнува филмови од YouTube, аудио и видео од Archive.org, видеа од WeGame и Gametrailers и форумот Tangler"
+	"youtube-desc": "Вметнува филмови од [https://www.youtube.com/ YouTube], аудио и видео од [https://archive.org/ Archive.org], и видео од [https://www.nicovideo.jp/ Niconico]"
 }

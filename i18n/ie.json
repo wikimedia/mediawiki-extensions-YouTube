@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jack Phoenix",
 			"Renan"
 		]
 	},
-	"youtube-desc": "Fixa filmes del YouTube, audio e video del Archive.org, video de WeGame e Gametrailers, e forum del Tangler"
+	"youtube-desc": "Fixa filmes del [https://www.youtube.com/ YouTube], audio e video del [https://archive.org/ Archive.org], e video de [https://www.nicovideo.jp/ Niconico]"
 }

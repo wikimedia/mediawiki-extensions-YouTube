@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jack Phoenix",
 			"Toliño"
 		]
 	},
-	"youtube-desc": "Incorpora vídeos do YouTube, vídeo e son de Archive.org, vídeo de WeGame e Gametrailers e o foro Tangler"
+	"youtube-desc": "Incorpora vídeos do [https://www.youtube.com/ YouTube], vídeo e son de [https://archive.org/ Archive.org], e vídeo de [https://www.nicovideo.jp/ Niconico]"
 }

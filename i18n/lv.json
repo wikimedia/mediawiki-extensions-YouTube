@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jack Phoenix",
 			"Papuass",
 			"Silraks"
 		]
 	},
-	"youtube-desc": "Ļauj iekļaut YouTube filmas, Archive.org audio un video, WeGame un Gametrailers video un Tangler forumu"
+	"youtube-desc": "Ļauj iekļaut [https://www.youtube.com/ YouTube] filmas, [https://archive.org/ Archive.org] audio un video, un [https://www.nicovideo.jp/ Niconico] video"
 }

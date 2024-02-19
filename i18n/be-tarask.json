@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jack Phoenix",
 			"Jim-by",
 			"Red Winged Duck"
 		]
 	},
-	"youtube-desc": "Убудоўвае фільмы з YouTube, аўдыё і відэа з Archive.org, відэа з WeGame і Gametrailers, форум Tangler"
+	"youtube-desc": "Убудоўвае фільмы з [https://www.youtube.com/ YouTube], аўдыё і відэа з [https://archive.org/ Archive.org], і відэа з [https://www.nicovideo.jp/ Niconico]"
 }

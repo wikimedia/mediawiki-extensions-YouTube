@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jack Phoenix",
 			"Jon Harald Søby",
 			"Nghtwlkr"
 		]
 	},
-	"youtube-desc": "Bygger inn YouTube-videoer, lyd og video fra Archive.org, video fra WeGame og Gamtrailers og Tangler-forum."
+	"youtube-desc": "Bygger inn [https://www.youtube.com/ YouTube]-videoer, lyd og video fra [https://archive.org/ Archive.org], og video fra [https://www.nicovideo.jp/ Niconico]"
 }

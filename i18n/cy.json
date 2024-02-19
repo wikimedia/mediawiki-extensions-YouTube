@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Afalau"
+			"Afalau",
+			"Jack Phoenix"
 		]
 	},
-	"youtube-desc": "Yn mewnblannu ffilmiau YouTube, fideos a sain Archive,org, fideos WeGame a Gametrailers, a fforymau Tangler"
+	"youtube-desc": "Yn mewnblannu ffilmiau [https://www.youtube.com/ YouTube], fideos a sain [https://archive.org/ Archive.org], a fideos [https://www.nicovideo.jp/ Niconico]"
 }

@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Jack Phoenix"
 		]
 	},
-	"youtube-desc": "Incorpora filmes do YouTube, áudio e vídeo de Archive.org, vídeo de WeGame e Gametrailers, e o fórum Tangler"
+	"youtube-desc": "Incorpora filmes do [https://www.youtube.com/ YouTube], áudio e vídeo de [https://archive.org/ Archive.org], e vídeo de [https://www.nicovideo.jp/ Niconico]"
 }

@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jack Phoenix",
 			"KuboF",
 			"Mihxil",
 			"Mirin"
 		]
 	},
-	"youtube-desc": "Enkorpigas filmojn de YouTube, sonojn kaj videaĵojn de Archive.org, videaĵojn de WeGame kaj Gametrailers, kaj forumojn de Tangler"
+	"youtube-desc": "Enkorpigas filmojn de [https://www.youtube.com/ YouTube], sonojn kaj videaĵojn de [https://archive.org/ Archive.org], kaj videaĵojn de [https://www.nicovideo.jp/ Niconico]"
 }

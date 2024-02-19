@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Jack Phoenix"
+		]
 	},
-	"youtube-desc": "Ubacuje video-snimke sa Jutjuba, Archive.org audio i video, WeGame i Gametrailers video, i Tangler foruma."
+	"youtube-desc": "Ubacuje video-snimke sa [https://www.youtube.com/ Jutjuba], [https://archive.org/ Archive.org] audio i video, i [https://www.nicovideo.jp/ Niconico] video"
 }
