@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Brettchenweber",
 			"Kghbln",
 			"Metalhead64"
 		]
 	},
-	"youtube-desc": "Ermöglicht das Einbetten von Videos, die bei [https://www.youtube.com/ YouTube], [https://archive.org/ Archive.org] Audio und Video, und [https://www.nicovideo.jp/ Niconico] Video"
+	"youtube-desc": "Ermöglicht das Einbetten von [https://www.youtube.com/ YouTube]-Videos, Audio und Video von [https://archive.org/ Archive.org] und [https://www.nicovideo.jp/ Niconico]-Videos"
 }
