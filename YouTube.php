@@ -131,76 +131,49 @@ class YouTube {
 			$argsStr = wfArrayToCgi( $urlArgs );
 		}
 
-		// Which technology to use for embedding -- HTML5 or Flash Player?
-		if ( !empty( $argv['type'] ) && strtolower( $argv['type'] ) == 'flash' ) {
-			$width = $width_max = 425;
-			$height = $height_max = 355;
+		// If the type argument wasn't supplied, default to HTML5, since that's
+		// what YouTube offers by default as well
+		$width = 560;
+		$height = 315;
+		$maxWidth = 960;
+		$maxHeight = 720;
 
-			if (
-				!empty( $argv['width'] ) &&
-				filter_var( $argv['width'], FILTER_VALIDATE_INT, [ 'options' => [ 'min_range' => 0 ] ] ) &&
-				$argv['width'] <= $width_max
-			) {
-				$width = $argv['width'];
-			}
-			if (
-				!empty( $argv['height'] ) &&
-				filter_var( $argv['height'], FILTER_VALIDATE_INT, [ 'options' => [ 'min_range' => 0 ] ] ) &&
-				$argv['height'] <= $height_max
-			) {
-				$height = $argv['height'];
-			}
+		if (
+			!empty( $argv['width'] ) &&
+			filter_var( $argv['width'], FILTER_VALIDATE_INT, [ 'options' => [ 'min_range' => 0 ] ] ) &&
+			$argv['width'] <= $maxWidth
+		) {
+			$width = $argv['width'];
+		}
+		if (
+			!empty( $argv['height'] ) &&
+			filter_var( $argv['height'], FILTER_VALIDATE_INT, [ 'options' => [ 'min_range' => 0 ] ] ) &&
+			$argv['height'] <= $maxHeight
+		) {
+			$height = $argv['height'];
+		}
 
-			$urlBase = '//www.youtube.com/v/';
-			if ( !empty( $ytid ) ) {
-				$url = $urlBase . $ytid . $argsStr;
-				return "<object type=\"application/x-shockwave-flash\" data=\"{$url}\" width=\"{$width}\" height=\"{$height}\"><param name=\"movie\" value=\"{$url}\"/><param name=\"wmode\" value=\"transparent\"/></object>";
-			}
-		} else {
-			// If the type argument wasn't supplied, default to HTML5, since that's
-			// what YouTube offers by default as well
-			$width = 560;
-			$height = 315;
-			$maxWidth = 960;
-			$maxHeight = 720;
+		// Support YouTube's "enhanced privacy mode", in which "YouTube won’t
+		// store information about visitors on your web page unless they play
+		// the video" if the privacy argument was supplied
+		// @see https://support.google.com/youtube/answer/171780?expand=PrivacyEnhancedMode#privacy
+		$urlBase = '//www.youtube-nocookie.com/embed/';
 
-			if (
-				!empty( $argv['width'] ) &&
-				filter_var( $argv['width'], FILTER_VALIDATE_INT, [ 'options' => [ 'min_range' => 0 ] ] ) &&
-				$argv['width'] <= $maxWidth
-			) {
-				$width = $argv['width'];
+		if ( !empty( $ytid ) ) {
+			$url = $urlBase . $ytid . '?' . $argsStr;
+			$content = $iframe = "<iframe data-extension=\"youtube\" width=\"{$width}\" height=\"{$height}\" src=\"{$url}\" frameborder=\"0\" allowfullscreen></iframe>";
+			if ( $wgYouTubeEnableLazyLoad ) {
+				$img =
+					'<img width="' . $width . '" height="' . $height . '" src="'
+					. '//img.youtube.com/vi/' . $ytid . '/default.jpg" />';
+				$content =
+					'<div style="width: ' . $width . 'px; height:' . $height . 'px;"'
+					. 'class="ext-YouTube-video ext-YouTube-video--lazy" data-ytid="' . $ytid . '">'
+					. $img
+					. '<!-- ' . $iframe . ' -->'
+					. '</div>';
 			}
-			if (
-				!empty( $argv['height'] ) &&
-				filter_var( $argv['height'], FILTER_VALIDATE_INT, [ 'options' => [ 'min_range' => 0 ] ] ) &&
-				$argv['height'] <= $maxHeight
-			) {
-				$height = $argv['height'];
-			}
-
-			// Support YouTube's "enhanced privacy mode", in which "YouTube won’t
-			// store information about visitors on your web page unless they play
-			// the video" if the privacy argument was supplied
-			// @see https://support.google.com/youtube/answer/171780?expand=PrivacyEnhancedMode#privacy
-			$urlBase = '//www.youtube-nocookie.com/embed/';
-
-			if ( !empty( $ytid ) ) {
-				$url = $urlBase . $ytid . '?' . $argsStr;
-				$content = $iframe = "<iframe data-extension=\"youtube\" width=\"{$width}\" height=\"{$height}\" src=\"{$url}\" frameborder=\"0\" allowfullscreen></iframe>";
-				if ( $wgYouTubeEnableLazyLoad ) {
-					$img =
-						'<img width="' . $width . '" height="' . $height . '" src="'
-						. '//img.youtube.com/vi/' . $ytid . '/default.jpg" />';
-					$content =
-						'<div style="width: ' . $width . 'px; height:' . $height . 'px;"'
-						. 'class="ext-YouTube-video ext-YouTube-video--lazy" data-ytid="' . $ytid . '">'
-						. $img
-						. '<!-- ' . $iframe . ' -->'
-						. '</div>';
-				}
-				return $content;
-			}
+			return $content;
 		}
 	}
 
