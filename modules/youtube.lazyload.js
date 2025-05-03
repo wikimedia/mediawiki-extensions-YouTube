@@ -1,8 +1,8 @@
-$( function () {
-	var $videos = $( '.ext-YouTube-video--lazy' );
+$( () => {
+	const $videos = $( '.ext-YouTube-video--lazy' );
 
 	$videos.on( 'click', function () {
-		var $elm = $( this ),
+		let $elm = $( this ),
 			$conts = $elm.contents(),
 			le = $conts.length,
 			ifr = null,
